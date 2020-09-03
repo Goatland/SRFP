@@ -1,5 +1,6 @@
 package data.utils.srfp;
 
+//these sources are learned from Origemem's mod Celestial-Mount-Circle
 import com.fs.starfarer.api.Global;
 
 public class I18nUtil {

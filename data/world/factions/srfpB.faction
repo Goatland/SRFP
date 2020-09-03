@@ -1,0 +1,211 @@
+{
+	id:"srfp",
+	"color":[239,65,53,255],
+	"displayName":"黑军",
+	"displayNameWithArticle":"黑军",
+	"displayNameLong":"自由星区安那其联盟",
+	"displayNameLongWithArticle":"自由星区安那其联盟",
+	"displayNameIsOrAre":"",
+	"logo":"graphics/srfp/factions/srfp.png",
+	"crest":"graphics/srfp/factions/crest_srfp.png",
+	"shipNamePrefix":"",
+	"shipNameSources":{
+		"SRFP":1,
+	},
+	"names":{
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+
+	# VariantOverrides restricts hulls to listed variants and adjusts their probability
+	#"variantOverrides":{},
+
+	# Multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"base_bp":0.25,				# Don't use these very often
+			"lowtech_bp":0.25,			# Don't use these very often
+			"midline_bp":0.25,			# Don't use these very often
+		},
+		"hulls":{
+			"srfp_tachanka":1.25,		# Replace a few Dingjuns
+		},
+	},
+
+	# Ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfpB_bp"],
+		#"hulls":[],
+	},
+
+	"knownShips":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp","srfpB_bp"],
+		"hulls":[
+			"srfp_tachanka",
+		],
+	},
+
+	# Listing ships here will make the faction mostly use them even if other hulls become available
+	#"priorityShips":{
+	#	"tags":[""],
+	#	"hulls":["", "", ""],
+	#},
+
+	#"knownFighters":{
+	#	"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp", "srfpB_bp"],
+	#	"fighters":[
+	#		"hoplon_wing",
+	#	],
+	#},
+
+	#"priorityFighters":{
+	#	"tags":["srfp_bp", "srfpB_bp"],
+	#	#"fighters":[],
+	#},
+
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "srfp_bp","srfpB_bp"],
+		"weapons":[],
+	},
+
+	"priorityWeapons":{
+		"tags":["srfp_bp"],
+		"weapons":[],
+	},
+
+	"knownHullMods":{
+		"tags":["base_bp"],
+		"hullMods":[
+			"advancedshieldemitter",
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",
+			"heavyarmor",
+			"insulatedengine",
+			"targetingunit",
+			"nav_relay",
+			"operations_center",
+			"fluxbreakers",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+			"efficiency_overhaul",
+			"hiressensors",
+		],
+	},
+
+	"factionDoctrine":{
+		"warships":4,
+		"carriers":2,
+		"phaseShips":0,	# THI does not use phase ships
+
+		"officerQuality":2,
+		"shipQuality":3,
+		"numShips":3,
+
+		"shipSize":3,
+
+		"aggression":2,
+
+		"combatFreighterProbability":0.5,					# Instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.1,				# As part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.2,	# As part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"officer_management",
+			"coordinated_maneuvers",
+			"fighter_doctrine",
+			"electronic_warfare",
+		],
+	},
+
+	"internalComms":"tiandong_internal",
+	"illegalCommodities":[
+		"organs",
+	],
+
+	#"music":{},
+
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_hegemony02.png",
+			"graphics/portraits/portrait_hegemony06.png",
+			"graphics/portraits/portrait_mercenary01.png",
+			"graphics/portraits/portrait_mercenary03.png",
+			"graphics/portraits/portrait_mercenary04.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait15.png",
+			"graphics/portraits/portrait17.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait26.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait31.png",
+			"graphics/portraits/portrait33.png",
+			"graphics/portraits/portrait35.png",
+			"graphics/portraits/portrait36.png",
+			"graphics/portraits/portrait40.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_hegemony03.png",
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait_mercenary05.png",
+			"graphics/portraits/portrait14.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait27.png",
+			"graphics/portraits/portrait28.png",
+			"graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait32.png",
+			"graphics/portraits/portrait34.png",
+			"graphics/portraits/portrait37.png",
+			"graphics/portraits/portrait39.png",
+		],
+	},
+
+	"custom":{
+		"allowsTransponderOffTrade":true,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":3,
+		"AICoreRepMult":1,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,	# Consider setting this to false
+		"caresAboutAtrocities":false,
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,		# Consider setting this to false
+			"vsFreePort":false,
+			"canBombard":false,			
+			"territorial":true,
+		},
+	},
+
+	"fleetTypeNames":{
+		"mercScout":"内务部防卫舰队",
+		"mercBountyHunter":"内务部打击舰队",
+		"mercPrivateer":"人民志愿舰队",
+		"mercPatrol":"人民保卫舰队",
+		"mercArmada":"人民近卫部队",
+		"trade":"人民互助商队",
+		"smallTrader":"发展改革考察队",
+		"tradeSmuggler":"特别运输舰队",
+		"taskForce":"快速反应舰队",
+	},
+},

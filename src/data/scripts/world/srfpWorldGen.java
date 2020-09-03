@@ -1,10 +1,7 @@
 package data.scripts.world;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.FactionAPI;
-import com.fs.starfarer.api.campaign.SectorAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.SectorGeneratorPlugin;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
@@ -71,16 +68,62 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
 
     @Override
     public void generate(SectorAPI sector) {
-        FactionAPI srfp = sector.getFaction("srfp");
-        //Generate your system
-        new srfp_Omega810().generate(sector);
         //Add faction to bounty system
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("srfp");
-        //set relationship
-        srfp.setRelationship(Factions.LUDDIC_CHURCH, 0.15f);
-        srfp.setRelationship(Factions.LUDDIC_PATH, -0.5f);
-        srfp.setRelationship(Factions.PERSEAN, 0.2f);
-        srfp.setRelationship(Factions.PIRATES, -0.75f);
+        initFactionRelationships(sector);
+        //Generate your system
+        new srfp_Omega810().generate(sector);
+    }
+    public static void initFactionRelationships(SectorAPI sector)
+    {
+        FactionAPI srfp = sector.getFaction("srfp");
+        FactionAPI srfpB = sector.getFaction("srfpB");
+        FactionAPI hegemony = sector.getFaction(Factions.HEGEMONY);
+        FactionAPI tritachyon = sector.getFaction(Factions.TRITACHYON);
+        FactionAPI pirates = sector.getFaction(Factions.PIRATES);
+        FactionAPI independent = sector.getFaction(Factions.INDEPENDENT);
+        FactionAPI kol = sector.getFaction(Factions.KOL);
+        FactionAPI church = sector.getFaction(Factions.LUDDIC_CHURCH);
+        FactionAPI path = sector.getFaction(Factions.LUDDIC_PATH);
+        FactionAPI diktat = sector.getFaction(Factions.DIKTAT);
+        FactionAPI league = sector.getFaction(Factions.PERSEAN);
+        FactionAPI neutral = sector.getFaction(Factions.NEUTRAL);
+        FactionAPI remnants = sector.getFaction(Factions.REMNANTS);
+
+
+        //FactionAPI sra = sector.getFaction("shadow_industry");
+        //FactionAPI birdy = sector.getFaction("blackrock_driveyards");
+        //FactionAPI thi = sector.getFaction("tiandong");
+
+
+        srfp.setRelationship(hegemony.getId(), RepLevel.WELCOMING);
+        srfp.setRelationship(tritachyon.getId(), RepLevel.INHOSPITABLE);
+        srfp.setRelationship(pirates.getId(), RepLevel.INHOSPITABLE);
+        srfp.setRelationship(independent.getId(), RepLevel.FAVORABLE);
+        srfp.setRelationship(kol.getId(), RepLevel.HOSTILE);
+        srfp.setRelationship(church.getId(), RepLevel.NEUTRAL);
+        srfp.setRelationship(path.getId(), RepLevel.VENGEFUL);
+        srfp.setRelationship(diktat.getId(), RepLevel.HOSTILE);
+        srfp.setRelationship(league.getId(), RepLevel.WELCOMING);
+        srfp.setRelationship(remnants.getId(), RepLevel.HOSTILE);
+
+        srfp.setRelationship("blackrock_driveyards", RepLevel.WELCOMING);
+        srfp.setRelationship("tiandong", RepLevel.NEUTRAL);
+        srfp.setRelationship("diableavionics", RepLevel.HOSTILE);
+
+        srfpB.setRelationship(srfp.getId(), RepLevel.COOPERATIVE);
+        srfpB.setRelationship(path.getId(), RepLevel.VENGEFUL);
+        srfpB.setRelationship(diktat.getId(), RepLevel.HOSTILE);
+        srfpB.setRelationship(remnants.getId(), RepLevel.VENGEFUL);
+        srfpB.setRelationship(pirates.getId(), RepLevel.VENGEFUL);
+        srfpB.setRelationship(league.getId(), RepLevel.NEUTRAL);
+        srfpB.setRelationship(independent.getId(), RepLevel.FAVORABLE);
+        srfpB.setRelationship(church.getId(), RepLevel.INHOSPITABLE);
+        srfpB.setRelationship(pirates.getId(), RepLevel.NEUTRAL);
+
+        srfpB.setRelationship("blackrock_driveyards", RepLevel.WELCOMING);
+        srfpB.setRelationship("tiandong", RepLevel.NEUTRAL);
+        srfpB.setRelationship("diableavionics", RepLevel.HOSTILE);
     }
 }
 
