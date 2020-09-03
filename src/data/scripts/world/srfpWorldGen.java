@@ -9,7 +9,7 @@ import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import data.scripts.world.systems.srfpOmega810;
+import data.scripts.world.systems.srfp_Omega810;
 
 import java.util.ArrayList;
 
@@ -73,7 +73,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
     public void generate(SectorAPI sector) {
         FactionAPI srfp = sector.getFaction("srfp");
         //Generate your system
-        new srfpOmega810().generate(sector);
+        new srfp_Omega810().generate(sector);
         //Add faction to bounty system
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("srfp");
         //set relationship

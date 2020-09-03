@@ -5,18 +5,15 @@ import com.fs.starfarer.api.Global;
 import data.scripts.world.srfpWorldGen;
 import exerelin.campaign.SectorManager;
 
-import static com.fs.starfarer.api.Global.getSettings;
-
 public class srfpModPlugin extends BaseModPlugin {
     @Override
     public void onApplicationLoad() throws Exception {
         //check if lazylib exists
-        boolean hasLazyLib = getSettings().getModManager().isModEnabled("lw_lazylib");
+        boolean hasLazyLib = Global.getSettings().getModManager().isModEnabled("lw_lazylib");
         if (!hasLazyLib) {
             throw new RuntimeException("SRFP requires LazyLib!");
         }
     }
-
     @Override
     public void onNewGame() {
         //Nex compatibility setting, if there is no nex or corvus mode(Nex), just generate the system
