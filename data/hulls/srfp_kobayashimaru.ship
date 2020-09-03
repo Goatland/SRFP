@@ -1,0 +1,207 @@
+{
+  "hullName": "SRFP_kobayashimaru",
+  "hullId": "srfp_kobayashimaru",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/srfp/ships/srfp_kobayashimaru/srfp_kobayashimaru.png",
+  "style": "MIDLINE",
+  "height": 150,
+  "width": 100,
+  "center": [50, 64],
+  "collisionRadius": 135,
+  "shieldCenter": [12, 0],
+  "shieldRadius": 115,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "surveying_equipment",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "borer_wing"
+  ],
+  "builtInWeapons": {
+    "WS 003": "blinker_red",
+    "WS 004": "blinker_green",
+    "WS 005": "blinker_red",
+    "WS 006": "blinker_green"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [68, 0]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [68, 28]
+    },
+    {
+      "id": "WS 010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -45,
+      "locations": [23.5, -39]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [68, -28.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [19.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 58.5,
+      "locations": [-4, 23]
+    },
+    {
+      "id": "LB 1",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [
+        -6.5, -37,
+        -3, -37,
+        1, -37
+      ]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 45,
+      "locations": [-1.5, 38.5]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 1,
+      "angle": 0,
+      "locations": [70, 42]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [70, -42]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-38, 38]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-38, -38]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-61, 25],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-62, 15],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-63, 6],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-63, -6],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-62, -15],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-61, -24],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -57.5, 22.5,
+    -18, 42,
+    6, 43,
+    55, 43.5,
+    76, 37.5,
+    78.5, 18,
+    84, -1,
+    78, -31.5,
+    57, -46,
+    -17, -45,
+    -34, -35,
+    -58, -26,
+    -50, 1
+  ]
+}

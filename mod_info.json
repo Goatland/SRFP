@@ -1,0 +1,10 @@
+{
+	"id":"Socialist Revolutionary Front of Perseus",
+	"name":"Socialist Revolutionary Front of Perseus",
+	"author":"Yuli Hua",
+	"version":"0.1prerelease",
+	"description":"*Requires LazyLib \nWorkers of Perseus, Unite!",
+	"gameVersion":"0.9.1a",
+	"jars":["jars/srfp.jar"],
+	"modPlugin":"data.scripts.SRFPModPlugin"
+}

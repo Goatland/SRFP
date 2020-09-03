@@ -1,0 +1,99 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":1,
+	},
+	"combatSmall":{
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":1,
+	},
+	"combatMedium":{
+		"srfp_kobayashimaru_standard":1,
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":1,
+	},
+	"combatLarge":{
+		"srfp_tachanka_partisan":1,
+	},
+	"combatCapital":{
+		"srfp_tachanka_partisan":1,
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+		"srfp_kobayashimaru_standard":2.5,
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":1,
+	},
+	"combatFreighterMedium":{
+		"srfp_kobayashimaru_standard":2.5,
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":1,
+	},
+	"combatFreighterLarge":{
+		"srfp_kobayashimaru_standard":2.5,
+		"srfp_tachanka_partisan":1,
+	},
+	
+	#"civilianRandom":{},
+
+	# carriers
+	"carrierSmall":{
+		"srfp_kobayashimaru_standard":2.5,
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":1,
+	},
+	#"carrierMedium":{},
+	#"carrierLarge":{},
+
+	# phase ships
+	#"phaseSmall":{},
+	#"phaseMedium":{},
+	#"phaseLarge":{},
+	#"phaseCapital":{},
+
+	# freighters and such
+	#"freighterSmall":{},
+	#"freighterMedium":{},
+	#"freighterLarge":{},
+	
+	#"tankerSmall":{},
+	#"tankerMedium":{},
+	#"tankerLarge":{},
+	
+	#"personnelSmall":{},
+	#"personnelMedium":{},
+	#"personnelLarge":{},
+	
+	"linerSmall":{},
+	"linerMedium":{},
+	"linerLarge":{},
+	
+	# utility ships
+	#"tug":{},
+	#"crig":{},
+	#"utility":{},
+	
+	#"orbitalStationLowTech":{},
+	
+	#"battlestationLowTech":{},
+	
+	
+
+
+	# Old/unused below this line
+	#"fastAttack":{},
+
+	"escortSmall":{
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":10,
+	},
+	"escortMedium":{
+		"srfp_labrador_assault":1,
+		"srfp_tachanka_partisan":10,	
+	},
+	
+}

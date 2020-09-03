@@ -1,0 +1,31 @@
+{
+  "variantId": "srfp_labrador_assault",
+  "hullId": "srfp_labrador",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

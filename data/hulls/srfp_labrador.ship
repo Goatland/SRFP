@@ -1,0 +1,82 @@
+{
+  "hullName": "SRFP_labrador",
+  "hullId": "srfp_labrador",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/srfp/ships/srfp_labrador/srfp_labrador.png",
+  "style": "LOW_TECH",
+  "height": 72,
+  "width": 62,
+  "center": [31, 27],
+  "collisionRadius": 73,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 64,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [34, -6]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 290,
+      "angle": 145,
+      "locations": [-4, 4]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -180,
+      "locations": [-19, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-25, 22],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-25, -22],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    43, 13,
+    36.5, -15.5,
+    10, -13.5,
+    14, -19,
+    14, -27.5,
+    -23.5, -28,
+    -24, -16.5,
+    -7, -15,
+    -19, -11,
+    -19, 11,
+    -10.5, 15.5,
+    -24, 16.5,
+    -23.5, 27,
+    15, 27,
+    15.5, 17.5,
+    11, 12
+  ]
+}

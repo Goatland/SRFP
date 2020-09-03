@@ -1,0 +1,115 @@
+{
+  "hullName": "SRFP_tachanka",
+  "hullId": "srfp_tachanka",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/srfp/ships/srfp_tachanka.png",
+  "style": "HIGH_TECH",
+  "height": 94,
+  "width": 62,
+  "center": [31, 42],
+  "collisionRadius": 80,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 70,
+  "viewOffset": 50,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [7, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 90,
+      "locations": [-15, 11]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90,
+      "locations": [-15, -11]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [42.5, -0]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [17.5, 24]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [17.5, -24]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-35.5, 13],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-38.5, -0],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36.5, -13],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    52.5, 8.5,
+    52.5, -8.5,
+    42.5, -11.5,
+    41, -15.5,
+    23, -15.5,
+    23, -29.5,
+    1, -28,
+    -5.5, -16.5,
+    -35, -17,
+    -42, -0,
+    -35, 17,
+    -5.5, 16.5,
+    1, 28,
+    23, 29.5,
+    23, 15.5,
+    41, 15.5,
+    42.5, 11.5
+  ]
+}

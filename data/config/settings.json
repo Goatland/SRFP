@@ -1,0 +1,12 @@
+{	
+	"designTypeColors":{
+		"人民船舶局":[239,65,53,255],
+		"黑军":[255,255,255,255]
+	},
+	"graphics":{
+		"blueprint_packages":{
+			"srfp_package":"graphics/srfp/icons/cargo/bp_srfp.png",
+			"srfpB_package":"graphics/srfp/icons/cargo/bp_srfpB.png"
+		}
+	}
+}
