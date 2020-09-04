@@ -1,9 +1,9 @@
 {
 	"id":"Socialist Revolutionary Front of Perseus",
-	"name":"Socialist Revolutionary Front of Perseus",
+	"name":"英仙座社会革命阵线-自由星区安那其联盟：红与黑",
 	"author":"Yuli Hua, Leonie",
 	"version":"0.1prerelease",
-	"description":"*Requires LazyLib \nWorkers of Perseus, Unite!",
+	"description":"需要LazyLib、MagicLib和GraphicsLib，支援势力争霸 \n*Requires LazyLib, MagicLib and GraphicsLib, Nexerelin compatible \nWorkers of Perseus, Unite!",
 	"gameVersion":"0.9.1a",
 	"jars":["jars/srfpdemo.jar"],
 	"modPlugin":"data.scripts.srfpModPlugin"
