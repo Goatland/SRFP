@@ -135,7 +135,7 @@
 	"internalComms":"tiandong_internal",
 	"illegalCommodities":[
 		"organs",
-		"AI_Cores",
+		"ai_cores",
 	],
 
 	#"music":{},
