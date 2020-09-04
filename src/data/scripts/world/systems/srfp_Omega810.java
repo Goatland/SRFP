@@ -47,9 +47,9 @@ public class srfp_Omega810 {
 
         gate.setCircularOrbit(system.getEntityById("omega"), 360*(float)Math.random(), 1500, 150f);
 
-        system.addAsteroidBelt(om_Star, 100, 2250, 500, 290, 310, Terrain.ASTEROID_BELT,  "Omega810 Inner Belt");
-        system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 2200, 275f, null, null);
-        system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 2300, 245f, null, null);
+        system.addAsteroidBelt(om_Star, 100, 5000, 500, 290, 310, Terrain.ASTEROID_BELT,  "Omega810 Belt");
+        system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 4950, 375f, null, null);
+        system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 5050, 345f, null, null);
 
         //a new planet for people
         PlanetAPI Neoamster = system.addPlanet("srfp_planet_Neoamster", om_Star, I18nUtil.getStarSystemsString("planet_name_Neoamster"), "terran", 215, 120f, 4500f, 380f);
@@ -86,7 +86,7 @@ public class srfp_Omega810 {
                                 Industries.MINING,
                                 Industries.HEAVYBATTERIES
                         )),
-                0.3f,
+                0.35f,
                 false,
                 true);
         //make a custom description which is specified in descriptions.csv
@@ -96,13 +96,13 @@ public class srfp_Omega810 {
         //and give it a nanoforge
         ((HeavyIndustry) NeoamsterMarket.getIndustry(Industries.ORBITALWORKS)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
-        PlanetAPI Jonesburg = system.addPlanet("srfp_planet_Jonesburg", om_Star, I18nUtil.getStarSystemsString("planet_name_Jonesburg"), "barren-desert", 90, 75, 1000f, 30);
+        PlanetAPI Jonesburg = system.addPlanet("srfp_planet_Jonesburg", om_Star, I18nUtil.getStarSystemsString("planet_name_Jonesburg"), "barren-desert", 90, 75, 8000f, 800);
 
         MarketAPI JonesburgMarket = addMarketplace("srfp", Jonesburg, null
-                , Jonesburg.getName(), 6,
+                , Jonesburg.getName(), 4,
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.POPULATION_5,
+                                Conditions.POPULATION_4,
                                 Conditions.ORE_MODERATE,
                                 Conditions.RARE_ORE_RICH,
                                 Conditions.VOLATILES_PLENTIFUL,
@@ -110,6 +110,7 @@ public class srfp_Omega810 {
                         )),
                 new ArrayList<>(
                         Arrays.asList(
+                                Submarkets.GENERIC_MILITARY,
                                 Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_OPEN,
                                 Submarkets.SUBMARKET_STORAGE
@@ -118,21 +119,22 @@ public class srfp_Omega810 {
                         Arrays.asList(
                                 Industries.POPULATION,
                                 Industries.SPACEPORT,
+                                Industries.STARFORTRESS,
                                 Industries.MINING,
                                 Industries.HEAVYINDUSTRY,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.REFINING,
                                 Industries.TECHMINING
                         )),
-                0.3f,
+                0.35f,
                 true,
                 true);
         Jonesburg.setCustomDescriptionId("srfp_planet_Jonesburg");
         ((HeavyIndustry) JonesburgMarket.getIndustry(Industries.HEAVYINDUSTRY)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
         //set Jumppoint
-        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("hejaz_jump", "Hejaz Bridge");
-        jumpPoint1.setCircularOrbit( system.getEntityById("omega"), 180, 4000, 180f);
+        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("omega_jump", "Omega Bridge");
+        jumpPoint1.setCircularOrbit( system.getEntityById("omega"), 210, 4000, 380f);
         jumpPoint1.setRelatedPlanet(Neoamster);
         system.addEntity(jumpPoint1);
 

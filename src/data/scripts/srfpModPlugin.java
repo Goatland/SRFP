@@ -13,6 +13,11 @@ public class srfpModPlugin extends BaseModPlugin {
         if (!hasLazyLib) {
             throw new RuntimeException("SRFP requires LazyLib!");
         }
+        boolean hasMagicLib = Global.getSettings().getModManager().isModEnabled("MagicLib");
+        if (!hasMagicLib) {
+            throw new RuntimeException("SRFP requires MagicLib! Where is the magic?" +
+                    "\nGet it at http://fractalsoftworks.com/forum/index.php?topic=13718.0");
+        }
     }
     @Override
     public void onNewGame() {

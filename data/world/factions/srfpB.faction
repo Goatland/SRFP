@@ -1,13 +1,13 @@
 {
-	id:"srfp",
-	"color":[239,65,53,255],
+	id:"srfpB",
+	"color":[255,255,255,255],
 	"displayName":"黑军",
 	"displayNameWithArticle":"黑军",
 	"displayNameLong":"自由星区安那其联盟",
 	"displayNameLongWithArticle":"自由星区安那其联盟",
 	"displayNameIsOrAre":"",
-	"logo":"graphics/srfp/factions/srfp.png",
-	"crest":"graphics/srfp/factions/crest_srfp.png",
+	"logo":"graphics/srfp/factions/srfpB.png",
+	"crest":"graphics/srfp/factions/crest_srfpB.png",
 	"shipNamePrefix":"",
 	"shipNameSources":{
 		"SRFP":1,

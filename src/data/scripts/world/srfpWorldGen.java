@@ -42,7 +42,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
         }
 
         //Sets us to a free port, if we should
-        //newMarket.setFreePort(freePort);
+        newMarket.setFreePort(freePort);
 
         //Adds our connected entities, if any
         if (null != connectedEntities) {
@@ -96,7 +96,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
         //FactionAPI thi = sector.getFaction("tiandong");
 
 
-        srfp.setRelationship(hegemony.getId(), RepLevel.WELCOMING);
+        srfp.setRelationship(hegemony.getId(), RepLevel.HOSTILE);
         srfp.setRelationship(tritachyon.getId(), RepLevel.INHOSPITABLE);
         srfp.setRelationship(pirates.getId(), RepLevel.INHOSPITABLE);
         srfp.setRelationship(independent.getId(), RepLevel.FAVORABLE);
@@ -120,6 +120,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
         srfpB.setRelationship(independent.getId(), RepLevel.FAVORABLE);
         srfpB.setRelationship(church.getId(), RepLevel.INHOSPITABLE);
         srfpB.setRelationship(pirates.getId(), RepLevel.NEUTRAL);
+        srfpB.setRelationship(hegemony.getId(), RepLevel.HOSTILE);
 
         srfpB.setRelationship("blackrock_driveyards", RepLevel.WELCOMING);
         srfpB.setRelationship("tiandong", RepLevel.NEUTRAL);

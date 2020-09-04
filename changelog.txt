@@ -1,0 +1,5 @@
+0.1prerelease:
+-added Omega810 system and two planets of srfp
+-separated SRFP and Black Army to 2 factions
+-added 3 ships
+-completed the description.csv
