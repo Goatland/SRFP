@@ -132,9 +132,12 @@
 		],
 	},
 
-	"internalComms":"tiandong_internal",
+	"internalComms":"srfp_internal",
 	"illegalCommodities":[
 		"organs",
+		"drugs",
+		"ai_cores",
+		"hand_weapons",
 	],
 
 	#"music":{},
@@ -178,9 +181,29 @@
 			"graphics/portraits/portrait39.png",
 		],
 	},
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"部长会议主席"},
+			"spaceSailor":{"name":"海军战士"},
+			"spaceChief":{"name":"海军军士长"},
+			"spaceEnsign":{"name":"海军少尉"},
+			"spaceCommander":{"name":"海军上尉"},
+			"spaceCaptain":{"name":"海军上校"},
+			"spaceAdmiral":{"name":"海军中将"},
+			"spaceMarshal":{"name":"海军上将"},
 
+			"citizen":{"name":"人民"},
+			"agent":{"name":"侦察兵"},
+		},
+		"posts":{
+			"factionLeader":{"name":"部长会议主席"},
+			"patrolCommander":{"name":"巡逻队指挥官"},
+			"fleetCommander":{"name":"舰队司令员"},
+			"baseCommander":{"name":"基地司令员"},
+		},
+	},
 	"custom":{
-		"allowsTransponderOffTrade":true,
+		"allowsTransponderOffTrade":false,
 		"offersCommissions":true,
 		"engagesInHostilities":true,
 		"buysAICores":true,
@@ -188,10 +211,10 @@
 		"AICoreRepMult":1,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,	# Consider setting this to false
-		"caresAboutAtrocities":false,
+		"caresAboutAtrocities":true,
 		"punitiveExpeditionData":{
 			"vsCompetitors":true,		# Consider setting this to false
-			"vsFreePort":false,
+			"vsFreePort":true,
 			"canBombard":false,			
 			"territorial":true,
 		},

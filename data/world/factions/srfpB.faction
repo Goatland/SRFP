@@ -135,6 +135,7 @@
 	"internalComms":"tiandong_internal",
 	"illegalCommodities":[
 		"organs",
+		"AI_Cores",
 	],
 
 	#"music":{},
@@ -188,7 +189,7 @@
 		"AICoreRepMult":1,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,	# Consider setting this to false
-		"caresAboutAtrocities":false,
+		"caresAboutAtrocities":true,
 		"punitiveExpeditionData":{
 			"vsCompetitors":true,		# Consider setting this to false
 			"vsFreePort":false,
@@ -198,14 +199,14 @@
 	},
 
 	"fleetTypeNames":{
-		"mercScout":"内务部防卫舰队",
-		"mercBountyHunter":"内务部打击舰队",
-		"mercPrivateer":"人民志愿舰队",
-		"mercPatrol":"人民保卫舰队",
-		"mercArmada":"人民近卫部队",
-		"trade":"人民互助商队",
-		"smallTrader":"发展改革考察队",
-		"tradeSmuggler":"特别运输舰队",
+		"mercScout":"侦察兵",
+		"mercBountyHunter":"赏金猎人",
+		"mercPrivateer":"自由舰队",
+		"mercPatrol":"游骑兵",
+		"mercArmada":"集合民兵",
+		"trade":"远征商队",
+		"smallTrader":"小型贸易舰队",
+		"tradeSmuggler":"走私者",
 		"taskForce":"快速反应舰队",
 	},
 },
