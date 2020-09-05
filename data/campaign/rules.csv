@@ -1,0 +1,166 @@
+id,trigger,conditions,script,text,options,notes
+# SRFP greeting lines,,,,,,
+greetingSRFPFriendly,OpenCommLink,"$faction.id == srfp
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""你好，$playerName 同志，愿我们一起为星际解放事业而奋斗!""
+OR
+""通讯已建立，哦，是大名鼎鼎的$playerName同志，今天您又处决了几个反动派?""
+OR
+""通讯已建立，你好，我的同志，愿 Shultze 的光芒照耀英仙座!""",,
+greetingSRFPHostileWeaker,OpenCommLink,"$faction.id == srfp
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""你背叛了工人阶级，操你妈！吃我的枪子儿吧!""
+OR
+""如果你要摧毁我们的革命事业，那么起码你要先跨过我的尸体.""
+OR
+这位 社会革命阵线 $personRank 看着你，叹了一口气. ""我的生命可以牺牲，我的信仰决不可放弃.""",cutCommLink:切断通讯,
+greetingSRFPHostileWeakerDefiant,OpenCommLink,"$faction.id == srfp
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"敌方的 $personRank 看起来咬牙切齿. ""为了革命事业，"" $heOrShe 说道.
+
+""我将献出自己的一切."" $HisOrHer 的神情坚定. "" 社会革命阵线 万岁!"" 
+
+随后通讯链接被瞬间切断.",cutCommLink:切断通讯,
+greetingSRFPHostileStronger,OpenCommLink,"$faction.id == srfp
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""奉 社会革命阵线内务部 的命令，我特来逮捕你，对了， 内务委员 没和我说要你活着见他哦.""
+
+这位 人民海军 $personRank 一脸幸灾乐祸地退出了全息频道.
+OR
+""你是建设共产主义的绊脚石！"" $PersonRank $personName 转身说道 ""中尉同志, 这一次不可再放过他.""
+
+通讯链接被骤然切断.
+OR
+""历史的车轮将碾过你们这些反动派渣滓.""
+OR
+这位 人民海军 $personRank 冷笑着说, ""所以你是反动资产阶级、军阀的走狗还是海盗? 没关系，反正我们都会给你送上前往死亡的船票.""",cutCommLink:切断通讯,
+greetingSRFPNeutral,OpenCommLink,"$faction.id == srfp
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""你的身份已被确认, 请保持距离, 任何军事干涉行为都将被视为反革命罪行.""
+
+这位人民海军 $personRank 敷衍的说了句 ""革命万岁"" 便关闭了通讯.
+OR
+这位人民海军 $personRank 很不耐烦. ""没什么事的话我先挂了.""
+OR
+""已建立通讯链接. 如果你有关于反动派的情报, 提交给当地内务部，有机会获得奖励.""",,
+,,,,,,
+# FSAL greeting lines,,,,,,
+greetingPirateFriendly,OpenCommLink,"$faction.id == srfpB
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""哦，我的老伙计，祝你今天也能喝上美酒!""
+OR
+""生活愉快，我的同志.""
+OR
+""♫傻逼的老古董们，朋克是不会死的!赶快滚远一点，别想控制住我们...♫""",,
+greetingPirateHostileWeaker,OpenCommLink,"$faction.id == srfpB
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""您好, 亲爱的舰长!欢迎来到休伯利...算了和你开玩笑的，说真的，放过我吧.""
+OR
+""对面的这位大人，您能去抢 社会革命阵线 的物资吗? 反正他们的物资也是我们运的.""",cutCommLink:切断通讯,
+greetingPirateHostileWeakerDefiant,OpenCommLink,"$faction.id == srfpB
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"这位 黑军 指挥官 $personRank 在你关闭通讯链接前对你抛了个媚眼.
+OR
+$personName 轻佻地说: ""你来追我呀，追到我我就和你嘿嘿嘿.""
+OR
+""生活在英仙座，简直就是一种耻辱，我操你大爷!!!""",cutCommLink:切断通讯,
+greetingPirateHostileStronger,OpenCommLink,"$faction.id == srfpB
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""我$personName ，是无政府主义者，我要给所有企图阻止工人获得自由的坏蛋套上绞索!""
+OR
+""你是坏人还是只是因为我想要你的货? 我才不在乎，反正等你凉透了没人知道是怎么回事.""
+OR
+这位 黑军 $personRank 在切断通讯前狂笑着对你比了个粗鲁的手势.",cutCommLink:切断通讯,
+greetingPirateNeutral,OpenCommLink,"$faction.id == srfpB
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""你谁啊，你是查尔斯先生吗? 哦不是啊，那我挂了，886!""
+OR
+""嘘，老子背后这批货可纯了，别耽误了我的生意!""
+OR
+""你吼那么大声干嘛?爬爬爬.""",,
+,,,,,,
+# Trade panel flavor text,,,,,,
+flavorTextMarketSRFP,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == srfp","AddText ""港口大厅里停满了各式的民用商舰与军舰, 卸货的舰长只有得到辛达后勤官员的允许 才能得以继续. 而身着领口都绣有辛达强权 标志 西装的商人们, 则静静地穿过显示着 自己货物信息的数据显示板."" marketFlavorTextColor
+AddText ""一架全息投影无人机正展示着 辛达瑞亚之狮 Andrada 上将的图像, 这位传奇英雄正居高 临下的将目光聚焦在了远处的通风管道上. 而两侧 辛达强权 的旗帜则在人造风中乱舞."" marketFlavorTextColor",,,
+flavorTextMarketSRFPNeoAmster,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == srfp
+$market.id == NeoamsterMarket","AddText ""在其破碎的平原上, 蠕虫般的列车在城市间 不断地穿梭着. 你在港口角落找了一处免费 停靠点, 由于导航甲板与信标早已伤痕累累 且模糊不清, 使你在着陆期间费了不少力气. 一脸严肃的辛达官员拿着你的证件询问着每 一项信息要点, 就好像你曾是个罪犯一样."" marketFlavorTextColor
+AddText ""当其他船长也在遭受着类似待遇时, 辛达的 旗帜也在其头顶上无力地相互推搡. 而百无 聊赖的你则好奇地打量着每个收货口安置的 一种肮脏的开顶笼子."" marketFlavorTextColor",,,
+flavorTextMarketSRFPB,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == srfpB","AddText ""港口大厅里停满了各式的民用商舰与军舰, 卸货的舰长只有得到辛达后勤官员的允许 才能得以继续. 而身着领口都绣有辛达强权 标志 西装的商人们, 则静静地穿过显示着 自己货物信息的数据显示板."" marketFlavorTextColor
+AddText ""一架全息投影无人机正展示着 辛达瑞亚之狮 Andrada 上将的图像, 这位传奇英雄正居高 临下的将目光聚焦在了远处的通风管道上. 而两侧 辛达强权 的旗帜则在人造风中乱舞."" marketFlavorTextColor",,,
+,,,,,,
+# relationship level descriptions SRFP,,,,,,
+relLevelNeutralSRFP,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == srfp",, 社会革命阵线 不在乎你，但也不会拒绝你进入他们的空间站.,,
+relLevelFavorableSRFP,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == srfp",, 社会革命阵线 的官员对你的管束更小了，这得益于你交的关税和给官员们的私人津贴.,,
+relLevelWelcomingSRFP,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == srfp",, 社会革命阵线 的官员已经认识你了，他们会适当地协助你，或者在你犯事的时候网开一面.,,
+relLevelFriendlySRFP,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == srfp",,你已经获得了 社会革命阵线 高官的赏识，下级官员完全拿你没办法.,,
+relLevelCooperativeSRFP,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == srfp",,"你已经获得了 社会革命阵线 签发的""新经济特别许可证""，在官僚系统里八面玲珑.",,
+relLevelSuspiciousSRFP,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == srfp",, 社会革命阵线 开始怀疑你了，地方内务委员会已将你加入监视名单.,,
+relLevelInhospitableSRFP,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == srfp",, 社会革命阵线 不在乎你，但也不会拒绝你进入他们的空间站.,,
+relLevelHostileSRFP,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == srfp",,"你已经被 内务部 年度指令定义为""橙色通缉""， 人民海军 将毫不犹豫地攻击你.",,
+relLevelVengefulSRFP,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == srfp",,"你已经被 内务部 年度指令定义为""黑色通缉""，你的星际生活可能会变得一团糟.",,
+,,,,,,
+# relationship level descriptions FSAL,,,,,,
+relLevelNeutralSRFPB,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == srfpB",, 黑军 不在乎你，但只要你能来干活，那还是好兄弟.,,
+relLevelFavorableSRFPB,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == srfpB",,你已经学会了 黑军 们的黑话，能和他们打成一片了.,,
+relLevelWelcomingSRFPB,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == srfpB",,你已经学会了 黑军 们的黑话，能和他们打成一片了.,,
+relLevelFriendlySRFPB,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == srfpB",,你优秀的业务能力和高超的酒量已经深受 黑军 舰长们敬佩.,,
+relLevelCooperativeSRFPB,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == srfpB",,只要你一走进 黑军 的酒吧，就能引来欢呼和喝彩，到处都有人和你攀谈.,,
+relLevelSuspiciousSRFPB,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == srfpB",, 黑军 的舰长间流传着有关你的负面信息，但你还未被视作威胁.,,
+relLevelInhospitableSRFPB,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == srfpB",, 黑军 不在乎你，但只要你能来干活，那还是好兄弟.,,
+relLevelHostileSRFPB,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == srfpB",,你已经在 黑军 中身负骂名，没有人会再信任你，但也许你还有机会偷偷摸摸地进行交易.,,
+relLevelVengefulSRFPB,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == srfpB",,毫无疑问，你就是工人追求自由道路上的绊脚石，是 黑军 的眼中钉，你将一直被攻击.,,
+,,,,,,
+,,,,,,
+# SRFP commission,,,,,,
+CMSNTextRejectHostile_srfp,CMSNTextRejectHostile,$faction.id == srfp,,"""你逗我呢？你在 内务部 的{名单}里，你现在跑过来找我是想死吗？事实上我现在有权直接致电内务部来逮捕你.""",,
+CMSNTextHasOther_srfp,CMSNTextHasOther,$faction.id == srfp,,"""经查证你已经与 $theOtherCommissionFaction 签订了雇佣协议, 这对 内务委员 来说可是个有趣的信息，如果你不与你现在的雇主解约，那么 内务部 将可以以间谍罪把你就地枪决.""",,
+CMSNTextUnsuited_srfp,CMSNTextUnsuited,$faction.id == srfp,,"""抱歉, 你的资料和政治背景显示你并不适合协助 社会革命阵线 建设共产主义.""",,
+CMSNTextSuitedPart1_srfp,CMSNTextSuitedPart1,$faction.id == srfp,,"接受 社会革命阵线 合作协议是个非常严肃的决定, 你不仅要铲除所有反革命分子, 也必须在官方机构无法触及的区域内替 人民海军 和 内务部 处理复杂事务. 最重要的是, 你将致力于建设属于 英仙座人类 的社会主义. 
+
+我必须告知你, 你有权随时辞去当前职务, 但不能保证其他人民海军的忠诚指战员对你没有意见，也不能保证内务部不会将你列为高度可疑对象.",,
+CMSNTextSuitedPart2_srfp,CMSNTextSuitedPart2,$faction.id == srfp,,"""奉 社会革命阵线 之名, 我将指派你作为 人民海军 的协助战力, 你确认吗?""",,
+CMSNTextWelcomePart1_srfp,CMSNTextWelcomePart1,$faction.id == srfp,,"""太好了, 欢迎加入，同志!""",,
+CMSNTextWelcomePart2_srfp,CMSNTextWelcomePart2,$faction.id == srfp,,"""那么, 我还能为你做些什么?""",,
+CMSNTextChangeMind_srfp,CMSNTextChangeMind,$faction.id == srfp,,"""好吧, 革命事业是需要捷尔任斯基那样的钢铁意志才能参与的伟大工作，也许普通人还是在当下混乱的星际社会中苟且偷生为好.""
+
+你可以走了.""",,
+CMSNResignAskToConfirm_srfp,CMSNResignAskToConfirm,$faction.id == srfp,,"""你确定么? 一旦你提交辞呈，那么 社会革命阵线 忠诚的 人民海军 和 内务部 将不会继续保护你的舰队的安全，等我们建成了共产主义，你恐怕也享受不到了.""",,
+CMSNResignConfirmed_srfp,CMSNResignConfirmed,$faction.id == srfp,,"""行吧，你可以走了，但这不代表 内务部 不会再找上你.""",,
+CMSNResignCancelled_srfp,CMSNResignCancelled,$faction.id == srfp,,"""好，很有精神!  社会革命阵线 的革命事业需要持之以恒，我们要把那些优柔寡断的小资产阶级清除出我们的队伍.""",,
+,,,,,,
+,,,,,,
+# turning AI cores in,,,,,,
+aiCores_turnInOptionSelHegemony,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == srfp",FireAll PopulateCoresTurnInOptions,"""如果你能为我们提供革命事业的重要物资，真的非常感谢，同志!""",,
+aiCores_neverMindOptionSelectedSRFP,DialogOptionSelected,"$option == aiCores_neverMind
+$faction.id == srfp",FireAll PopulateOptions,"$PersonRank $personLastName 怀疑地问:""你真的没有吗?""",,
+aiCores_turnInResponseHegemony,AICoresTurnedIn,$faction.id == srfp,FireAll PopulateOptions,$PersonRank $personLastName 代表社会革命委员会感谢了你. 然后把话题转移 到了其他事上.,,
+,,,,,,
+,,,,,,
+# portside bar stuff,,,,,,
+bar_descsrfp,BarPrintDesc,$faction.id == srfp,ShowImageVisual hegemony_bar,"刚踏入这间拥挤但光线充足的酒吧, 你就被墙上那些大多来自核心世界的 装饰用酒瓶所吸引. 店长与不当班的军官们嬉笑着混在一起, 只有身着 制服的店员正不可开交的为这儿的顾客们提供酒水服务. 而一处角落里, 一群海军学员又喊又唱, 绝望地享受着最后一次轮班前的自由时光.",,
+bar_descsrfpB,BarPrintDesc,$faction.id == srfpB,ShowImageVisual pirates_bar,"刚踏入这间拥挤但光线充足的酒吧, 你就被墙上那些大多来自核心世界的 装饰用酒瓶所吸引. 店长与不当班的军官们嬉笑着混在一起, 只有身着 制服的店员正不可开交的为这儿的顾客们提供酒水服务. 而一处角落里, 一群海军学员又喊又唱, 绝望地享受着最后一次轮班前的自由时光.",,
+,,,,,,

@@ -1,6 +1,12 @@
 {
 	id:"srfp",
 	"color":[239,65,53,255],
+
+	"baseUIColor":[200,0,0,255],
+	"darkUIColor":[85,0,0,175],
+	"gridUIColor":[255,0,0,75],
+	"brightUIColor":[231,98,103,255],
+
 	"displayName":"社会革命阵线",
 	"displayNameWithArticle":"社会革命阵线",
 	"displayNameLong":"英仙座社会革命阵线",
@@ -185,21 +191,27 @@
 		"ranks":{
 			"factionLeader":{"name":"部长会议主席"},
 			"spaceSailor":{"name":"海军战士"},
-			"spaceChief":{"name":"海军军士长"},
-			"spaceEnsign":{"name":"海军少尉"},
-			"spaceCommander":{"name":"海军上尉"},
-			"spaceCaptain":{"name":"海军上校"},
-			"spaceAdmiral":{"name":"海军中将"},
-			"spaceMarshal":{"name":"海军上将"},
+
+    		"groundPrivate":{"name":"人民军战士"},
 
 			"citizen":{"name":"人民"},
-			"agent":{"name":"侦察兵"},
+			"agent":{"name":"侦察员"},
 		},
 		"posts":{
 			"factionLeader":{"name":"部长会议主席"},
 			"patrolCommander":{"name":"巡逻队指挥官"},
 			"fleetCommander":{"name":"舰队司令员"},
 			"baseCommander":{"name":"基地司令员"},
+			"administrator":{"name":"政委"},
+    		"stationCommander":{"name":"空间站指挥官"},
+    		"outpostCommander":{"name":"前哨指挥官"},
+    		"portmaster":{"name":"港口委员会主任"},
+    		"supplyOfficer":{"name":"后勤部长"},
+
+			"mercenary":{"name":"外籍军团士兵"},
+			"freeAdmin":{"name":"外派政委"},
+
+			"investigator":{"name":"内务部委员"},
 		},
 	},
 	"custom":{
@@ -221,14 +233,18 @@
 	},
 
 	"fleetTypeNames":{
-		"mercScout":"内务部防卫舰队",
+		"mercScout":"内务部侦查舰队",
 		"mercBountyHunter":"内务部打击舰队",
 		"mercPrivateer":"人民志愿舰队",
-		"mercPatrol":"人民保卫舰队",
-		"mercArmada":"人民近卫部队",
+		"mercPatrol":"人民海军特种舰队",
+		"mercArmada":"人民海军主力舰队",
 		"trade":"人民互助商队",
 		"smallTrader":"发展改革考察队",
 		"tradeSmuggler":"特别运输舰队",
 		"taskForce":"快速反应舰队",
+		"tradeLiner":"人民客运局舰队",
+		"patrolSmall":"小型边防舰队",
+		"patrolMedium":"中型边防舰队",
+		"patrolLarge":"大型边防舰队",
 	},
 },

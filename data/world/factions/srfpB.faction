@@ -182,16 +182,16 @@
 
 	"custom":{
 		"allowsTransponderOffTrade":true,
-		"offersCommissions":true,
+		"offersCommissions":false,
 		"engagesInHostilities":true,
 		"buysAICores":true,
 		"AICoreValueMult":3,
 		"AICoreRepMult":1,
 		"buysSurveyData":true,
-		"hostilityImpactOnGrowth":true,	# Consider setting this to false
+		"hostilityImpactOnGrowth":true,
 		"caresAboutAtrocities":true,
 		"punitiveExpeditionData":{
-			"vsCompetitors":true,		# Consider setting this to false
+			"vsCompetitors":false,
 			"vsFreePort":false,
 			"canBombard":false,			
 			"territorial":true,
