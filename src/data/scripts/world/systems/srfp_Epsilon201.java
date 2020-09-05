@@ -1,6 +1,5 @@
 package data.scripts.world.systems;
 
-import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.econ.impl.HeavyIndustry;
@@ -21,7 +20,7 @@ public class srfp_Epsilon201 {
         //create a star system
         StarSystemAPI system = sector.createStarSystem("Epsilon201");
         //set its location
-        system.getLocation().set(4133, 1500);
+        system.getLocation().set(4133, 2500);
         //set background image
         system.setBackgroundTextureFilename("graphics/backgrounds/background5.jpg");
 
@@ -60,11 +59,12 @@ public class srfp_Epsilon201 {
                                 Industries.MEGAPORT,
                                 Industries.STARFORTRESS,
                                 Industries.FARMING,
-                                Industries.PATROLHQ,
+                                Industries.HIGHCOMMAND,
                                 Industries.ORBITALWORKS,
                                 Industries.WAYSTATION,
                                 Industries.MINING,
-                                Industries.LIGHTINDUSTRY
+                                Industries.LIGHTINDUSTRY,
+                                Industries.HEAVYBATTERIES
                         )),
                 0.25f,
                 true,
@@ -77,7 +77,7 @@ public class srfp_Epsilon201 {
         ((HeavyIndustry) AumeMarket.getIndustry(Industries.ORBITALWORKS)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
         PlanetAPI Makhnovtchina = system.addPlanet("srfp_planet_Makhnovtchina", ep_Star, I18nUtil.getStarSystemsString("planet_name_Makhnovtchina"), "gas_giant", 90, 200, 6500f, 700);
-        Makhnovtchina.setCustomDescriptionId("planet_Makhnovtchina");
+        Makhnovtchina.setCustomDescriptionId("srfp_planet_Makhnovtchina");
 
         // Add fixed conditions to Makhnovtchina.
         Misc.initConditionMarket(Makhnovtchina);
@@ -87,7 +87,7 @@ public class srfp_Epsilon201 {
         Makhnovtchina.getMarket().getFirstCondition(Conditions.EXTREME_WEATHER).setSurveyed(true);
 
         PlanetAPI Stirner = system.addPlanet("srfp_planet_Stirner", Makhnovtchina, I18nUtil.getStarSystemsString("planet_name_Stirner"), "cryovolcanic", 90, 70, 1000f, 120);
-        Stirner.setCustomDescriptionId("planet_Makhnovtchina");
+        Stirner.setCustomDescriptionId("srfp_planet_Stirner");
 
         //a new market for planet
         MarketAPI StirnerMarket = addMarketplace("srfpB", Stirner, null
@@ -132,7 +132,7 @@ public class srfp_Epsilon201 {
 
         // Makhnov Space Stations
         SectorEntityToken makhnovindStation = system.addCustomEntity("makhnov_ind", "Makhnov综合商贸空间站", "station_lowtech1", "independent");
-        makhnovindStation.setCircularOrbitPointingDown(system.getEntityById("srfp_planet_Makhnovtchina"), 90, 200, 32);
+        makhnovindStation.setCircularOrbitPointingDown(system.getEntityById("srfp_planet_Makhnovtchina"), 90, 400, 32);
 
         MarketAPI MahknovMarket = addMarketplace("independent", makhnovindStation, null
                 , makhnovindStation.getName(), 4,
@@ -163,20 +163,6 @@ public class srfp_Epsilon201 {
                 true);
 
         makhnovindStation.setCustomDescriptionId("station_makhnovind");
-
-        ((HeavyIndustry) MahknovMarket.getIndustry(Industries.HEAVYINDUSTRY)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
-
-
-        //set Jumppoint
-        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("Aume_jump", "Aume Bridge");
-        jumpPoint1.setCircularOrbit( system.getEntityById("epsilon201"), 135, 2500f, 228f);
-        jumpPoint1.setRelatedPlanet(Aume);
-        system.addEntity(jumpPoint1);
-
-        JumpPointAPI jumpPoint2 = Global.getFactory().createJumpPoint("Stirner_jump", "Stirner Bridge");
-        jumpPoint1.setCircularOrbit( system.getEntityById("epsilon201"), 105, 6500f, 700);
-        jumpPoint1.setRelatedPlanet(Makhnovtchina);
-        system.addEntity(jumpPoint2);
 
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);

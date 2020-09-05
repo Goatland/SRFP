@@ -83,15 +83,13 @@ OR
 ,,,,,,
 # Trade panel flavor text,,,,,,
 flavorTextMarketSRFP,TradePanelFlavorText,"$global.tradePanelMode == MARKET
-$faction.id == srfp","AddText ""港口大厅里停满了各式的民用商舰与军舰, 卸货的舰长只有得到辛达后勤官员的允许 才能得以继续. 而身着领口都绣有辛达强权 标志 西装的商人们, 则静静地穿过显示着 自己货物信息的数据显示板."" marketFlavorTextColor
-AddText ""一架全息投影无人机正展示着 辛达瑞亚之狮 Andrada 上将的图像, 这位传奇英雄正居高 临下的将目光聚焦在了远处的通风管道上. 而两侧 辛达强权 的旗帜则在人造风中乱舞."" marketFlavorTextColor",,,
+$faction.id == srfp","AddText ""港口大厅里停满了各式的民用商舰与军舰，中心大厅上投影着巨大的社会革命阵线红旗.虽然卸货的舰长只有经过社会革命阵线官方的严格审查才能进入港口，但利润依然让英仙座各地的商人纷至沓来. 而身着人民军军服的军官,和穿着西装的内务部侦查员正在一盘站着，审视着每一个人."" marketFlavorTextColor",,,
 flavorTextMarketSRFPNeoAmster,TradePanelFlavorText,"$global.tradePanelMode == MARKET
 $faction.id == srfp
-$market.id == NeoamsterMarket","AddText ""在其破碎的平原上, 蠕虫般的列车在城市间 不断地穿梭着. 你在港口角落找了一处免费 停靠点, 由于导航甲板与信标早已伤痕累累 且模糊不清, 使你在着陆期间费了不少力气. 一脸严肃的辛达官员拿着你的证件询问着每 一项信息要点, 就好像你曾是个罪犯一样."" marketFlavorTextColor
-AddText ""当其他船长也在遭受着类似待遇时, 辛达的 旗帜也在其头顶上无力地相互推搡. 而百无 聊赖的你则好奇地打量着每个收货口安置的 一种肮脏的开顶笼子."" marketFlavorTextColor",,,
+$market.id == NeoamsterMarket","AddText ""Neo Amsterdam的市场是 社会革命阵线 最大的特许外贸市场，不光是 英仙座联盟 和 自由联盟 的商人喜欢来这里，辛达强权 和 速子科技 的商人也被允许在审查后进入，就连 霸主 和 卢德教会 的商人也会想办法拿到许可证到此经商。而此地的主人，人民军，发展委和内务部的眼睛，或明或暗的盯着每一个来到这里的人."" marketFlavorTextColor
+AddText ""当穿着海关制服的职员们一个一个清点着你的货物的时候，你只能百无聊赖地跟着远处的广播一起哼唱革命阵线的国歌."" marketFlavorTextColor",,,
 flavorTextMarketSRFPB,TradePanelFlavorText,"$global.tradePanelMode == MARKET
-$faction.id == srfpB","AddText ""港口大厅里停满了各式的民用商舰与军舰, 卸货的舰长只有得到辛达后勤官员的允许 才能得以继续. 而身着领口都绣有辛达强权 标志 西装的商人们, 则静静地穿过显示着 自己货物信息的数据显示板."" marketFlavorTextColor
-AddText ""一架全息投影无人机正展示着 辛达瑞亚之狮 Andrada 上将的图像, 这位传奇英雄正居高 临下的将目光聚焦在了远处的通风管道上. 而两侧 辛达强权 的旗帜则在人造风中乱舞."" marketFlavorTextColor",,,
+$faction.id == srfpB","AddText ""脏乱的港口大厅里停满了各式舰船--大多是破烂货，有些船是黑色涂装并胡乱写着标语或画着骷髅头，这些大概就是 黑军 的海军力量的一部分了. 大厅的墙上写着黑军的口号: 给一切妄图阻碍劳动者追求自由的家伙带去死亡. 各种装束奇特的人们四处忙碌着，还有不少人躲在角落里边抽烟边进行不可告人的交易."" marketFlavorTextColor",,,
 ,,,,,,
 # relationship level descriptions SRFP,,,,,,
 relLevelNeutralSRFP,RelationshipLevelDesc,"$faction.rel == NEUTRAL
@@ -161,6 +159,6 @@ aiCores_turnInResponseHegemony,AICoresTurnedIn,$faction.id == srfp,FireAll Popul
 ,,,,,,
 ,,,,,,
 # portside bar stuff,,,,,,
-bar_descsrfp,BarPrintDesc,$faction.id == srfp,ShowImageVisual hegemony_bar,"刚踏入这间拥挤但光线充足的酒吧, 你就被墙上那些大多来自核心世界的 装饰用酒瓶所吸引. 店长与不当班的军官们嬉笑着混在一起, 只有身着 制服的店员正不可开交的为这儿的顾客们提供酒水服务. 而一处角落里, 一群海军学员又喊又唱, 绝望地享受着最后一次轮班前的自由时光.",,
-bar_descsrfpB,BarPrintDesc,$faction.id == srfpB,ShowImageVisual pirates_bar,"刚踏入这间拥挤但光线充足的酒吧, 你就被墙上那些大多来自核心世界的 装饰用酒瓶所吸引. 店长与不当班的军官们嬉笑着混在一起, 只有身着 制服的店员正不可开交的为这儿的顾客们提供酒水服务. 而一处角落里, 一群海军学员又喊又唱, 绝望地享受着最后一次轮班前的自由时光.",,
+bar_descsrfp,BarPrintDesc,$faction.id == srfp,ShowImageVisual hegemony_bar,"刚踏入这间平平无奇的酒吧, 你就被没有一点额外装饰的反常景象吸引, 酒吧中央投影着 社会革命党 的党徽，背景音乐则都是些革命歌曲. 不当班的人民海军军官们嬉笑着混在一起，小官员则在一旁边抽烟边玩着纸牌, 散客们则自己干着自己的事情，只有身着国家机关制服的店员正不可开交的为这儿的顾客们提供酒水服务. 几乎看不出谁是内务部侦查员的线人甚至就是侦查员，不过总会有人看得出的，但不是你.",,
+bar_descsrfpB,BarPrintDesc,$faction.id == srfpB,ShowImageVisual pirates_bar,"你一进入酒吧, 大声播放的重金属音乐就让你的耳膜不堪忍受. 酒吧的舞台上正有一支你说不出名字的乐队正在暴力地演奏着，主唱正在炫耀自己的一口'黑嗓'.台下的听众们随着节奏摇摆着，让你怀疑自己是不是也要加入这场盛会. ",,
 ,,,,,,

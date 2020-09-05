@@ -80,7 +80,7 @@ public class srfp_Omega810 {
                                 Industries.MEGAPORT,
                                 Industries.STARFORTRESS,
                                 Industries.FARMING,
-                                Industries.PATROLHQ,
+                                Industries.HIGHCOMMAND,
                                 Industries.ORBITALWORKS,
                                 Industries.WAYSTATION,
                                 Industries.MINING,
@@ -126,7 +126,8 @@ public class srfp_Omega810 {
                                 Industries.LIGHTINDUSTRY,
                                 Industries.REFINING,
                                 Industries.TECHMINING,
-                                Industries.HEAVYBATTERIES
+                                Industries.HEAVYBATTERIES,
+                                Industries.MILITARYBASE
                         )),
                 0.35f,
                 true,
