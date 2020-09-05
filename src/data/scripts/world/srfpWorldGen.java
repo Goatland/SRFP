@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import data.scripts.world.systems.srfp_Epsilon201;
 import data.scripts.world.systems.srfp_Omega810;
 
 import java.util.ArrayList;
@@ -73,6 +74,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
         initFactionRelationships(sector);
         //Generate your system
         new srfp_Omega810().generate(sector);
+        new srfp_Epsilon201().generate(sector);
     }
     public static void initFactionRelationships(SectorAPI sector)
     {
@@ -98,7 +100,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
 
         srfp.setRelationship(hegemony.getId(), RepLevel.HOSTILE);
         srfp.setRelationship(tritachyon.getId(), RepLevel.INHOSPITABLE);
-        srfp.setRelationship(pirates.getId(), RepLevel.INHOSPITABLE);
+        srfp.setRelationship(pirates.getId(), RepLevel.HOSTILE);
         srfp.setRelationship(independent.getId(), RepLevel.FAVORABLE);
         srfp.setRelationship(kol.getId(), RepLevel.HOSTILE);
         srfp.setRelationship(church.getId(), RepLevel.NEUTRAL);
@@ -115,9 +117,9 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
         srfpB.setRelationship(path.getId(), RepLevel.VENGEFUL);
         srfpB.setRelationship(diktat.getId(), RepLevel.HOSTILE);
         srfpB.setRelationship(remnants.getId(), RepLevel.VENGEFUL);
-        srfpB.setRelationship(pirates.getId(), RepLevel.VENGEFUL);
+        srfpB.setRelationship(pirates.getId(), RepLevel.INHOSPITABLE);
         srfpB.setRelationship(league.getId(), RepLevel.NEUTRAL);
-        srfpB.setRelationship(independent.getId(), RepLevel.FAVORABLE);
+        srfpB.setRelationship(independent.getId(), RepLevel.COOPERATIVE);
         srfpB.setRelationship(church.getId(), RepLevel.INHOSPITABLE);
         srfpB.setRelationship(pirates.getId(), RepLevel.NEUTRAL);
         srfpB.setRelationship(hegemony.getId(), RepLevel.HOSTILE);

@@ -27,7 +27,7 @@ public class srfp_Omega810 {
         //create a star system
         StarSystemAPI system = sector.createStarSystem("Omega810");
         //set its location
-        system.getLocation().set(3500, 300);
+        system.getLocation().set(3750, 1050);
         //set background image
         system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
 
@@ -47,7 +47,7 @@ public class srfp_Omega810 {
 
         gate.setCircularOrbit(system.getEntityById("omega"), 360*(float)Math.random(), 1500, 150f);
 
-        system.addAsteroidBelt(om_Star, 100, 5000, 500, 290, 310, Terrain.ASTEROID_BELT,  "Omega810 Belt");
+        system.addAsteroidBelt(om_Star, 100, 6000, 500, 290, 310, Terrain.ASTEROID_BELT,  "Omega810 Belt");
         system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 4950, 375f, null, null);
         system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 5050, 345f, null, null);
 
@@ -56,10 +56,10 @@ public class srfp_Omega810 {
 
         //a new market for planet
         MarketAPI NeoamsterMarket = addMarketplace("srfp", Neoamster, null
-                , Neoamster.getName(), 6,
+                , Neoamster.getName(), 7,
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.POPULATION_7, // population
+                                Conditions.POPULATION_8, // population
                                 Conditions.HABITABLE,
                                 Conditions.FARMLAND_ADEQUATE,
                                 Conditions.MILD_CLIMATE,
@@ -84,7 +84,8 @@ public class srfp_Omega810 {
                                 Industries.ORBITALWORKS,
                                 Industries.WAYSTATION,
                                 Industries.MINING,
-                                Industries.HEAVYBATTERIES
+                                Industries.HEAVYBATTERIES,
+                                Industries.REFINING
                         )),
                 0.35f,
                 false,
@@ -124,17 +125,19 @@ public class srfp_Omega810 {
                                 Industries.HEAVYINDUSTRY,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.REFINING,
-                                Industries.TECHMINING
+                                Industries.TECHMINING,
+                                Industries.HEAVYBATTERIES
                         )),
                 0.35f,
                 true,
                 true);
         Jonesburg.setCustomDescriptionId("srfp_planet_Jonesburg");
+        NeoamsterMarket.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.GAMMA_CORE);
         ((HeavyIndustry) JonesburgMarket.getIndustry(Industries.HEAVYINDUSTRY)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
         //set Jumppoint
-        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("omega_jump", "Omega Bridge");
-        jumpPoint1.setCircularOrbit( system.getEntityById("omega"), 210, 4000, 380f);
+        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("omega_jump", "Omega810 Bridge");
+        jumpPoint1.setCircularOrbit( system.getEntityById("omega"), 225, 4300, 380f);
         jumpPoint1.setRelatedPlanet(Neoamster);
         system.addEntity(jumpPoint1);
 
