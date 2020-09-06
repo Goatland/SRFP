@@ -2,9 +2,9 @@
 	id:"srfp",
 	"color":[239,65,53,255],
 
-	"baseUIColor":[200,0,0,255],
+	"baseUIColor":[239,65,53,255],
 	"darkUIColor":[85,0,0,175],
-	"gridUIColor":[255,0,0,75],
+	"gridUIColor":[255,255,255,75],
 	"brightUIColor":[231,98,103,255],
 
 	"displayName":"社会革命阵线",
@@ -208,9 +208,6 @@
     		"portmaster":{"name":"港口委员会主任"},
     		"supplyOfficer":{"name":"后勤部长"},
 
-			"mercenary":{"name":"外籍军团士兵"},
-			"freeAdmin":{"name":"外派政委"},
-
 			"investigator":{"name":"内务部委员"},
 		},
 	},
@@ -219,7 +216,7 @@
 		"offersCommissions":true,
 		"engagesInHostilities":true,
 		"buysAICores":true,
-		"AICoreValueMult":3,
+		"AICoreValueMult":2,
 		"AICoreRepMult":1,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,	# Consider setting this to false

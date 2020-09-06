@@ -3,6 +3,7 @@ package data.scripts.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.econ.impl.HeavyIndustry;
 import com.fs.starfarer.api.impl.campaign.ids.*;
@@ -14,6 +15,7 @@ import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySp
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
+import data.utils.srfp.AddAdmin;
 import data.utils.srfp.I18nUtil;
 
 import java.awt.*;
@@ -54,6 +56,11 @@ public class srfp_Omega810 {
         //a new planet for people
         PlanetAPI Neoamster = system.addPlanet("srfp_planet_Neoamster", om_Star, I18nUtil.getStarSystemsString("planet_name_Neoamster"), "terran", 215, 120f, 4500f, 380f);
 
+        Neoamster.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
+        Neoamster.getSpec().setGlowColor(new Color(255,255,255,255));
+        Neoamster.getSpec().setUseReverseLightForGlow(true);
+        Neoamster.applySpecChanges();
+
         //a new market for planet
         MarketAPI NeoamsterMarket = addMarketplace("srfp", Neoamster, null
                 , Neoamster.getName(), 7,
@@ -90,6 +97,18 @@ public class srfp_Omega810 {
                 0.35f,
                 false,
                 true);
+        //Add the Boss
+        NeoamsterMarket = AddAdmin.assignCustomAdmin(
+                NeoamsterMarket,
+                FullName.Gender.MALE,
+                Ranks.FACTION_LEADER,
+                Ranks.POST_FACTION_LEADER,
+                "Tashkent",
+                "Soviet",
+                "graphics/srfp/portraits/srfp_tashkent.png",
+                3,
+                3);
+
         //make a custom description which is specified in descriptions.csv
         Neoamster.setCustomDescriptionId("srfp_planet_Neoamster");
         //give the orbital works a gamma core

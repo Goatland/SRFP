@@ -1,6 +1,12 @@
 {
 	id:"srfpB",
 	"color":[255,255,255,255],
+
+	"baseUIColor":[100,100,100,255],
+	"darkUIColor":[0,0,0,175],
+	"gridUIColor":[255,255,255,255],
+	"brightUIColor":[66,66,66,255],
+
 	"displayName":"黑军",
 	"displayNameWithArticle":"黑军",
 	"displayNameLong":"自由星区安那其联盟",
@@ -13,10 +19,13 @@
 		"SRFP":1,
 	},
 	"names":{
+		"fringe":1,
 		"modern":1,
 		"world":1,
 		"future":1,
 		"myth":1,
+		"old english":1,
+		"pirate":1,
 	},
 
 	# VariantOverrides restricts hulls to listed variants and adjusts their probability
@@ -180,12 +189,44 @@
 		],
 	},
 
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"领袖"},
+			"spaceSailor":{"name":"自由水手"},
+
+    		"groundPrivate":{"name":"自由战士"},
+
+			"citizen":{"name":"人民"},
+			"agent":{"name":"侦探"},
+		},
+		"posts":{
+			"factionLeader":{"name":"领袖"},
+			"patrolCommander":{"name":"巡逻队指挥官"},
+			"fleetCommander":{"name":"舰队指挥官"},
+			"baseCommander":{"name":"基地指挥官"},
+			"administrator":{"name":"地方领袖"},
+    		"stationCommander":{"name":"空间站指挥官"},
+    		"outpostCommander":{"name":"前哨指挥官"},
+    		"portmaster":{"name":"港口老大"},
+    		"supplyOfficer":{"name":"补给负责人"},
+
+			"mercenary":{"name":"自由军官"},
+
+			"investigator":{"name":"侦探"},
+		},
+	},
+
 	"custom":{
 		"allowsTransponderOffTrade":true,
-		"offersCommissions":true,
+		"offerMissionsWhenHostile":true,
+		"willTradeWhenHostile":true,
+		"patrolsHaveNoPatrolMemoryKey":true,
+		"pirateBehavior":false, # for fleet behavior
+		"ignoreTradeWithEnemiesForReputation":true,
+		"offersCommissions":false,
 		"engagesInHostilities":true,
 		"buysAICores":true,
-		"AICoreValueMult":3,
+		"AICoreValueMult":1,
 		"AICoreRepMult":1,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,

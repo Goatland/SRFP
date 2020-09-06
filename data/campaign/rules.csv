@@ -93,19 +93,19 @@ $faction.id == srfpB","AddText ""脏乱的港口大厅里停满了各式舰船--
 ,,,,,,
 # relationship level descriptions SRFP,,,,,,
 relLevelNeutralSRFP,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == srfp",, "社会革命阵线 不在乎你, 但也不会拒绝你进入他们的空间站.",,
+$faction.id == srfp",," 社会革命阵线 不在乎你, 但也不会拒绝你进入他们的空间站.",,
 relLevelFavorableSRFP,RelationshipLevelDesc,"$faction.rel == FAVORABLE
-$faction.id == srfp",, "社会革命阵线 的官员对你的管束更小了, 这得益于你交的关税和给官员们的私人津贴.",,
+$faction.id == srfp",," 社会革命阵线 的官员对你的管束更小了, 这得益于你交的关税和给官员们的私人津贴.",,
 relLevelWelcomingSRFP,RelationshipLevelDesc,"$faction.rel == WELCOMING
-$faction.id == srfp",, "社会革命阵线 的官员已经认识你了, 他们会适当地协助你, 或者在你犯事的时候网开一面.",,
+$faction.id == srfp",," 社会革命阵线 的官员已经认识你了, 他们会适当地协助你, 或者在你犯事的时候网开一面.",,
 relLevelFriendlySRFP,RelationshipLevelDesc,"$faction.rel == FRIENDLY
 $faction.id == srfp",,"你已经获得了 社会革命阵线 高官的赏识, 下级官员完全拿你没办法.",,
 relLevelCooperativeSRFP,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
 $faction.id == srfp",,"你已经获得了 社会革命阵线 签发的""新经济特别许可证"", 在官僚系统里八面玲珑.",,
 relLevelSuspiciousSRFP,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == srfp",, "社会革命阵线 开始怀疑你了, 地方内务委员会已将你加入监视名单.",,
+$faction.id == srfp",," 社会革命阵线 开始怀疑你了, 地方内务委员会已将你加入监视名单.",,
 relLevelInhospitableSRFP,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == srfp",, "社会革命阵线 不在乎你, 但也不会拒绝你进入他们的空间站.",,
+$faction.id == srfp",," 社会革命阵线 不在乎你, 但也不会拒绝你进入他们的空间站.",,
 relLevelHostileSRFP,RelationshipLevelDesc,"$faction.rel == HOSTILE
 $faction.id == srfp",,"你已经被 内务部 年度指令定义为""橙色通缉"",  人民海军 将毫不犹豫地攻击你.",,
 relLevelVengefulSRFP,RelationshipLevelDesc,"$faction.rel == VENGEFUL
@@ -113,7 +113,7 @@ $faction.id == srfp",,"你已经被 内务部 年度指令定义为""黑色通�
 ,,,,,,
 # relationship level descriptions FSAL,,,,,,
 relLevelNeutralSRFPB,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == srfpB",, "黑军 不在乎你, 但只要你能来干活, 那还是好兄弟.",,
+$faction.id == srfpB",," 黑军 不在乎你, 但只要你能来干活, 那还是好兄弟.",,
 relLevelFavorableSRFPB,RelationshipLevelDesc,"$faction.rel == FAVORABLE
 $faction.id == srfpB",,"你已经学会了 黑军 们的黑话, 能和他们打成一片了.",,
 relLevelWelcomingSRFPB,RelationshipLevelDesc,"$faction.rel == WELCOMING
@@ -123,9 +123,9 @@ $faction.id == srfpB",,你优秀的业务能力和高超的酒量已经深受 �
 relLevelCooperativeSRFPB,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
 $faction.id == srfpB",,"只要你一走进 黑军 的酒吧, 就能引来欢呼和喝彩, 到处都有人和你攀谈.",,
 relLevelSuspiciousSRFPB,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == srfpB",, "黑军 的舰长间流传着有关你的负面信息, 但你还未被视作威胁.",,
+$faction.id == srfpB",," 黑军 的舰长间流传着有关你的负面信息, 但你还未被视作威胁.",,
 relLevelInhospitableSRFPB,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == srfpB",, "黑军 不在乎你, 但只要你能来干活, 那还是好兄弟.",,
+$faction.id == srfpB",," 黑军 不在乎你, 但只要你能来干活, 那还是好兄弟.",,
 relLevelHostileSRFPB,RelationshipLevelDesc,"$faction.rel == HOSTILE
 $faction.id == srfpB",,"你已经在 黑军 中身负骂名, 没有人会再信任你, 但也许你还有机会偷偷摸摸地进行交易.",,
 relLevelVengefulSRFPB,RelationshipLevelDesc,"$faction.rel == VENGEFUL
@@ -151,11 +151,17 @@ CMSNResignCancelled_srfp,CMSNResignCancelled,$faction.id == srfp,,"""好, 很有
 ,,,,,,
 ,,,,,,
 # turning AI cores in,,,,,,
-aiCores_turnInOptionSelHegemony,DialogOptionSelected,"$option == aiCores_startTurnIn
+aiCores_turnInOptionSelsrfp,DialogOptionSelected,"$option == aiCores_startTurnIn
 $faction.id == srfp",FireAll PopulateCoresTurnInOptions,"""如果你能为我们提供革命事业的重要物资, 真的非常感谢, 同志!""",,
 aiCores_neverMindOptionSelectedSRFP,DialogOptionSelected,"$option == aiCores_neverMind
 $faction.id == srfp",FireAll PopulateOptions,"$PersonRank $personLastName 怀疑地问:""你真的没有吗?""",,
-aiCores_turnInResponseHegemony,AICoresTurnedIn,$faction.id == srfp,FireAll PopulateOptions,$PersonRank $personLastName 代表社会革命委员会感谢了你. 然后把话题转移 到了其他事上.,,
+aiCores_turnInResponsesrfp,AICoresTurnedIn,$faction.id == srfp,FireAll PopulateOptions,$PersonRank $personLastName 代表社会革命委员会感谢了你. 然后把话题转移 到了其他事上.,,
+# turning AI cores in Black,,,,,,
+aiCores_turnInOptionSelsrfpB,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == srfpB",FireAll PopulateCoresTurnInOptions,"""嘿，如果你能给我一个核心，我会开好价钱，而且我保证不会把它倒卖掉，而是用于黑军的建设上!""",,
+aiCores_neverMindOptionSelectedSRFPB,DialogOptionSelected,"$option == aiCores_neverMind
+$faction.id == srfpB",FireAll PopulateOptions,$PersonRank $personLastName 笑了笑，说:“我知道你有但不愿给我，可我又能拿你怎么办呢，杀了你吗? ”,,
+aiCores_turnInResponsesrfpB,AICoresTurnedIn,$faction.id == srfpB,FireAll PopulateOptions,$PersonRank $personLastName 感谢了你. 然后把话题转移 到了其他事上.,,
 ,,,,,,
 ,,,,,,
 # portside bar stuff,,,,,,
