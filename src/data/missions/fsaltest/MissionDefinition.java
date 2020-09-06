@@ -1,9 +1,7 @@
 package data.missions.fsaltest;
 
-import com.fs.starfarer.api.combat.BattleCreationContext;
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
-import com.fs.starfarer.api.impl.combat.EscapeRevealPlugin;
 import com.fs.starfarer.api.mission.FleetSide;
 import com.fs.starfarer.api.mission.MissionDefinitionAPI;
 import com.fs.starfarer.api.mission.MissionDefinitionPlugin;
@@ -21,7 +19,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Set a small blurb for each fleet that shows up on the mission detail and
 		// mission results screens to identify each side.
 		api.setFleetTagline(FleetSide.PLAYER, "Anarchist Fleet");
-		api.setFleetTagline(FleetSide.ENEMY, "Hegemony Targets");
+		api.setFleetTagline(FleetSide.ENEMY, "Hegemony Fleet");
 		
 		// These show up as items in the bulleted list under 
 		// "Tactical Objectives" on the mission detail screen
@@ -33,10 +31,10 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addToFleet(FleetSide.PLAYER, "srfp_tachanka_partisan", FleetMemberType.SHIP, "Dramatic",true);
 		api.addToFleet(FleetSide.PLAYER, "srfp_tachanka_partisan", FleetMemberType.SHIP, "Anarchia Mama",true);
 		api.addToFleet(FleetSide.PLAYER, "srfp_tachanka_partisan", FleetMemberType.SHIP, "Princess Noire", true);
-		api.addToFleet(FleetSide.PLAYER, "srfp_kobayashimaru_standard", FleetMemberType.SHIP, "Don't Tread Me", true);
+		api.addToFleet(FleetSide.PLAYER, "srfp_kobayashimaru_standard", FleetMemberType.SHIP, "Don't Tread on Me", true);
 		
 
-		api.addToFleet(FleetSide.ENEMY, "falcon_XIV_Elite", FleetMemberType.SHIP, "HSS Jeanne d'Arc",false);
+		api.addToFleet(FleetSide.ENEMY, "dominator_XIV_Elite", FleetMemberType.SHIP, "HSS Jeanne d'Arc",true);
 	
 
 		

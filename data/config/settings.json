@@ -7,6 +7,9 @@
 		"blueprint_packages":{
 			"srfp_package":"graphics/srfp/icons/cargo/bp_srfp.png",
 			"srfpB_package":"graphics/srfp/icons/cargo/bp_srfpB.png"
+		},
+		"characters":{
+			"Tashkent Soviet":"graphics/srfp/portraits/characters/tashkent.png",
 		}
 	}
 }

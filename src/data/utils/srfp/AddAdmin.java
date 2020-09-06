@@ -24,7 +24,6 @@ public class AddAdmin {
             market.getCommDirectory().addPerson(person, 0);
             market.addPerson(person);
         }
-        MarketAPI newmarket = market;
-        return (newmarket);
+        return (market);
     }
 }

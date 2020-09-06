@@ -97,6 +97,7 @@ public class srfp_Omega810 {
                 0.35f,
                 false,
                 true);
+
         //Add the Boss
         NeoamsterMarket = AddAdmin.assignCustomAdmin(
                 NeoamsterMarket,
@@ -105,7 +106,7 @@ public class srfp_Omega810 {
                 Ranks.POST_FACTION_LEADER,
                 "Tashkent",
                 "Soviet",
-                "graphics/srfp/portraits/srfp_tashkent.png",
+                "graphics/srfp/portraits/characters/tashkent.png",
                 3,
                 3);
 
@@ -152,7 +153,7 @@ public class srfp_Omega810 {
                 true,
                 true);
         Jonesburg.setCustomDescriptionId("srfp_planet_Jonesburg");
-        NeoamsterMarket.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.GAMMA_CORE);
+        JonesburgMarket.getIndustry(Industries.HEAVYINDUSTRY).setAICoreId(Commodities.GAMMA_CORE);
         ((HeavyIndustry) JonesburgMarket.getIndustry(Industries.HEAVYINDUSTRY)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
         //set Jumppoint
