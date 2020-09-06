@@ -182,7 +182,7 @@
 
 	"custom":{
 		"allowsTransponderOffTrade":true,
-		"offersCommissions":false,
+		"offersCommissions":true,
 		"engagesInHostilities":true,
 		"buysAICores":true,
 		"AICoreValueMult":3,
@@ -200,13 +200,17 @@
 
 	"fleetTypeNames":{
 		"mercScout":"侦察兵",
-		"mercBountyHunter":"赏金猎人",
-		"mercPrivateer":"自由舰队",
+		"mercBountyHunter":"追猎者",
+		"mercPrivateer":"志愿兵",
 		"mercPatrol":"游骑兵",
-		"mercArmada":"集合民兵",
+		"mercArmada":"集合保卫团",
 		"trade":"远征商队",
-		"smallTrader":"小型贸易舰队",
+		"smallTrader":"小型商队",
 		"tradeSmuggler":"走私者",
-		"taskForce":"快速反应舰队",
+		"taskForce":"别动团",
+		"tradeLiner":"穿梭舰队",
+		"patrolSmall":"小型巡逻团",
+		"patrolMedium":"中型巡逻团",
+		"patrolLarge":"大型巡逻团"
 	},
 },
