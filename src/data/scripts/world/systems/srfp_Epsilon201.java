@@ -164,6 +164,13 @@ public class srfp_Epsilon201 {
 
         makhnovindStation.setCustomDescriptionId("station_makhnovind");
 
+        // Epsilon201 Relay
+        SectorEntityToken epsilon_relay = system.addCustomEntity("epsilon_relay", // unique id
+                null, // name - if null, defaultName from custom_entities.json will be used
+                "comm_relay", // type of object, defined in custom_entities.json
+                "srfpB"); // faction
+        epsilon_relay.setCircularOrbitPointingDown(system.getEntityById("epsilon201"), 120, 8000, 240);
+
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
 

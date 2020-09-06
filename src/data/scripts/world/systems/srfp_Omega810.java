@@ -145,6 +145,13 @@ public class srfp_Omega810 {
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
 
+        // Epsilon201 Relay
+        SectorEntityToken epsilon_relay = system.addCustomEntity("epsilon_relay", // unique id
+                null, // name - if null, defaultName from custom_entities.json will be used
+                "comm_relay", // type of object, defined in custom_entities.json
+                "srfp"); // faction
+        epsilon_relay.setCircularOrbitPointingDown(system.getEntityById("omega"), 120, 8000, 240);
+
         // Debris
         DebrisFieldTerrainPlugin.DebrisFieldParams params = new DebrisFieldTerrainPlugin.DebrisFieldParams(
                 150f, // field radius - should not go above 1000 for performance reasons

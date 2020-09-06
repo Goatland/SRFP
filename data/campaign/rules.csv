@@ -160,5 +160,5 @@ aiCores_turnInResponseHegemony,AICoresTurnedIn,$faction.id == srfp,FireAll Popul
 ,,,,,,
 # portside bar stuff,,,,,,
 bar_descsrfp,BarPrintDesc,$faction.id == srfp,ShowImageVisual hegemony_bar,"刚踏入这间平平无奇的酒吧, 你就被没有一点额外装饰的反常景象吸引, 酒吧中央投影着 社会革命党 的党徽, 背景音乐则都是些革命歌曲. 不当班的人民海军军官们嬉笑着混在一起, 小官员则在一旁边抽烟边玩着纸牌, 散客们则自己干着自己的事情, 只有身着国家机关制服的店员正不可开交的为这儿的顾客们提供酒水服务. 几乎看不出谁是内务部侦查员的线人甚至就是侦查员, 不过总会有人看得出的, 但不是你.",,
-bar_descsrfpB,BarPrintDesc,$faction.id == srfpB,ShowImageVisual pirates_bar,"你一进入酒吧, 大声播放的重金属音乐就让你的耳膜不堪忍受. 酒吧的舞台上正有一支你说不出名字的乐队正在暴力地演奏着, 主唱正在炫耀自己的一口'黑嗓'.台下的听众们随着节奏摇摆着, 让你怀疑自己是不是也要加入这场盛会. ",,
+bar_descsrfpB,BarPrintDesc,$faction.id == srfpB,ShowImageVisual pirate_bar,"你一进入酒吧, 大声播放的重金属音乐就让你的耳膜不堪忍受. 酒吧的舞台上正有一支你说不出名字的乐队正在暴力地演奏着, 主唱正在炫耀自己的一口'黑嗓'.台下的听众们随着节奏摇摆着, 让你怀疑自己是不是也要加入这场盛会. ",,
 ,,,,,,
