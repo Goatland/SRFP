@@ -166,11 +166,18 @@ public class srfp_Omega810 {
         system.autogenerateHyperspaceJumpPoints(true, true);
 
         // Epsilon201 Relay
-        SectorEntityToken epsilon_relay = system.addCustomEntity("epsilon_relay", // unique id
+        SectorEntityToken omega_relay = system.addCustomEntity("omega_relay", // unique id
                 null, // name - if null, defaultName from custom_entities.json will be used
                 "comm_relay", // type of object, defined in custom_entities.json
                 "srfp"); // faction
-        epsilon_relay.setCircularOrbitPointingDown(system.getEntityById("omega"), 120, 8000, 240);
+        omega_relay.setCircularOrbitPointingDown(system.getEntityById("omega"), 150, 4500f, 240);
+
+        // Epsilon201 Nav Buoy
+        SectorEntityToken omega_nav = system.addCustomEntity("omega_nav", // unique id
+                null, // name - if null, defaultName from custom_entities.json will be used
+                "nav_buoy", // type of object, defined in custom_entities.json
+                "srfp"); // faction
+        omega_nav.setCircularOrbitPointingDown(system.getEntityById("omega"), 75, 6000f, 300);
 
         // Debris
         DebrisFieldTerrainPlugin.DebrisFieldParams params = new DebrisFieldTerrainPlugin.DebrisFieldParams(

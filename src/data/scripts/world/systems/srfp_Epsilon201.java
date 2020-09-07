@@ -169,7 +169,15 @@ public class srfp_Epsilon201 {
                 null, // name - if null, defaultName from custom_entities.json will be used
                 "comm_relay", // type of object, defined in custom_entities.json
                 "srfpB"); // faction
-        epsilon_relay.setCircularOrbitPointingDown(system.getEntityById("epsilon201"), 120, 8000, 240);
+        epsilon_relay.setCircularOrbitPointingDown(system.getEntityById("epsilon201"), 120, 2500f, 228f);
+
+        // Epsilon201 Nav Buoy
+        SectorEntityToken epsilon_nav = system.addCustomEntity("epsilon_nav", // unique id
+                null, // name - if null, defaultName from custom_entities.json will be used
+                "nav_buoy", // type of object, defined in custom_entities.json
+                "srfpB"); // faction
+        epsilon_nav.setCircularOrbitPointingDown(system.getEntityById("epsilon201"), 75, 5000f, 300);
+
 
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
