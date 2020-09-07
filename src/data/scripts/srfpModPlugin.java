@@ -15,7 +15,7 @@ public class srfpModPlugin extends BaseModPlugin {
         }
         boolean hasMagicLib = Global.getSettings().getModManager().isModEnabled("MagicLib");
         if (!hasMagicLib) {
-            throw new RuntimeException("SRFP requires MagicLib! Where is the magic?" +
+            throw new RuntimeException("SRFP requires MagicLib!" +
                     "\nGet it at http://fractalsoftworks.com/forum/index.php?topic=13718.0");
         }
     }

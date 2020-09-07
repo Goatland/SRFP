@@ -41,25 +41,33 @@ public class srfp_Omega810 {
         //make asteroid belt surround it
         system.addAsteroidBelt(om_Star, 100, 2200f, 150f, 180, 360, Terrain.ASTEROID_BELT, "");
 
-        // Gate of Hejaz
+        // Gate of Omega810
         SectorEntityToken gate = system.addCustomEntity("Omega810_gate", // unique id
-                "Omega810 Gate", // name - if null, defaultName from custom_entities.json will be used
+                "Omega810之门", // name - if null, defaultName from custom_entities.json will be used
                 "inactive_gate", // type of object, defined in custom_entities.json
                 null); // faction
 
         gate.setCircularOrbit(system.getEntityById("omega"), 360*(float)Math.random(), 1500, 150f);
 
-        system.addAsteroidBelt(om_Star, 100, 6000, 500, 290, 310, Terrain.ASTEROID_BELT,  "Omega810 Belt");
+        system.addAsteroidBelt(om_Star, 300, 6000, 500, 290, 310, Terrain.ASTEROID_BELT,  "Omega810 Belt");
         system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 4950, 375f, null, null);
         system.addRingBand(om_Star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 5050, 345f, null, null);
 
-        //a new planet for people
-        PlanetAPI Neoamster = system.addPlanet("srfp_planet_Neoamster", om_Star, I18nUtil.getStarSystemsString("planet_name_Neoamster"), "terran", 215, 120f, 4500f, 380f);
+
+        PlanetAPI Vesuvio = system.addPlanet("srfp_planet_Vesuvio", om_Star, "Vesuvio", "lava", 40, 70, 1100f, 180);
+
+        //Capital of Srfp
+        PlanetAPI Neoamster = system.addPlanet("srfp_planet_Neoamster", om_Star, I18nUtil.getStarSystemsString("planet_name_Neoamster"), "terran", 215, 120f, 4000f, 380f);
 
         Neoamster.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
         Neoamster.getSpec().setGlowColor(new Color(255,255,255,255));
         Neoamster.getSpec().setUseReverseLightForGlow(true);
         Neoamster.applySpecChanges();
+
+        //a moon for Neoamster
+
+        PlanetAPI Haiya = system.addPlanet("srfp_planet_Haiya", Neoamster, "Haiya", "barren-bombarded", 20, 60, 800f, 43);
+        Haiya.setCustomDescriptionId("srfp_planet_Haiya");
 
         //a new market for planet
         MarketAPI NeoamsterMarket = addMarketplace("srfp", Neoamster, null
@@ -117,6 +125,13 @@ public class srfp_Omega810 {
         //and give it a nanoforge
         ((HeavyIndustry) NeoamsterMarket.getIndustry(Industries.ORBITALWORKS)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
+        PlanetAPI Georgia = system.addPlanet("srfp_planet_Georgia", om_Star, "Georgia", "toxic_cold", 180, 100, 5800f, 400);
+        Georgia.setCustomDescriptionId("srfp_planet_Georgia");
+        Georgia.getSpec().setGlowColor(new Color(245, 255, 250));
+        Georgia.getSpec().setUseReverseLightForGlow(true);
+        Georgia.getSpec().setCloudColor(new Color(220, 220, 200, 150));
+        Georgia.applySpecChanges();
+
         PlanetAPI Jonesburg = system.addPlanet("srfp_planet_Jonesburg", om_Star, I18nUtil.getStarSystemsString("planet_name_Jonesburg"), "barren-desert", 90, 75, 8000f, 800);
 
         MarketAPI JonesburgMarket = addMarketplace("srfp", Jonesburg, null
@@ -158,21 +173,21 @@ public class srfp_Omega810 {
 
         //set Jumppoint
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("omega_jump", "Omega810 Bridge");
-        jumpPoint1.setCircularOrbit( system.getEntityById("omega"), 225, 4300, 380f);
+        jumpPoint1.setCircularOrbit( system.getEntityById("omega"), 280, 4300, 380f);
         jumpPoint1.setRelatedPlanet(Neoamster);
         system.addEntity(jumpPoint1);
 
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
 
-        // Epsilon201 Relay
+        // Omega810 Relay
         SectorEntityToken omega_relay = system.addCustomEntity("omega_relay", // unique id
                 null, // name - if null, defaultName from custom_entities.json will be used
                 "comm_relay", // type of object, defined in custom_entities.json
                 "srfp"); // faction
         omega_relay.setCircularOrbitPointingDown(system.getEntityById("omega"), 150, 4500f, 240);
 
-        // Epsilon201 Nav Buoy
+        // Omega810 Nav Buoy
         SectorEntityToken omega_nav = system.addCustomEntity("omega_nav", // unique id
                 null, // name - if null, defaultName from custom_entities.json will be used
                 "nav_buoy", // type of object, defined in custom_entities.json

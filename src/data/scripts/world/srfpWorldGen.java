@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import data.scripts.world.systems.srfp_Dragon444;
 import data.scripts.world.systems.srfp_Epsilon201;
 import data.scripts.world.systems.srfp_Omega810;
 
@@ -75,6 +76,7 @@ public class srfpWorldGen implements SectorGeneratorPlugin {
         //Generate your system
         new srfp_Omega810().generate(sector);
         new srfp_Epsilon201().generate(sector);
+        new srfp_Dragon444().generate(sector);
     }
     public static void initFactionRelationships(SectorAPI sector)
     {

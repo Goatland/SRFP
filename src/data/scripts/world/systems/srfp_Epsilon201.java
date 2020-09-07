@@ -27,7 +27,7 @@ public class srfp_Epsilon201 {
         //the star
         PlanetAPI ep_Star = system.initStar("epsilon201", "star_red_dwarf",350f,150,3f,0.2f,0.1f);
 
-        system.addAsteroidBelt(ep_Star, 50, 3500, 500, 150, 170, Terrain.ASTEROID_BELT,  "Epsilon201 Belt");
+        system.addAsteroidBelt(ep_Star, 150, 3500, 500, 150, 170, Terrain.ASTEROID_BELT,  "Epsilon201 Belt");
         system.addRingBand(ep_Star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 3450, 130f, null, null);
         system.addRingBand(ep_Star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 3550, 140f, null, null);
 
@@ -125,11 +125,6 @@ public class srfp_Epsilon201 {
         //and give it a nanoforge
         ((HeavyIndustry) StirnerMarket.getIndustry(Industries.ORBITALWORKS)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
 
-        //give the orbital works a gamma core
-        StirnerMarket.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.GAMMA_CORE);
-        //and give it a nanoforge
-        ((HeavyIndustry) StirnerMarket.getIndustry(Industries.ORBITALWORKS)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
-
         // Makhnov Space Stations
         SectorEntityToken makhnovindStation = system.addCustomEntity("makhnov_ind", "Makhnov综合商贸空间站", "station_lowtech1", "independent");
         makhnovindStation.setCircularOrbitPointingDown(system.getEntityById("srfp_planet_Makhnovtchina"), 90, 400, 32);
@@ -152,7 +147,6 @@ public class srfp_Epsilon201 {
                         Arrays.asList(
                                 Industries.POPULATION,
                                 Industries.SPACEPORT,
-                                Industries.STARFORTRESS,
                                 Industries.PATROLHQ,
                                 Industries.WAYSTATION,
                                 Industries.REFINING,
@@ -161,6 +155,8 @@ public class srfp_Epsilon201 {
                 0.3f,
                 true,
                 true);
+
+        MahknovMarket.getIndustry(Industries.FUELPROD).setSpecialItem(new SpecialItemData(Items.CORRUPTED_NANOFORGE,null));
 
         makhnovindStation.setCustomDescriptionId("station_makhnovind");
 
