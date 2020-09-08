@@ -1,0 +1,34 @@
+{
+	"id":"srfp_schwan",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"hardpointSprite":"graphics/srfp/weapons/Schwan_Plasma/srfp_schwan_base.png",
+	"hardpointGunSprite":"graphics/srfp/weapons/Schwan_Plasma/srfp_schwan_barrel.png",
+	"hardpointGlowSprite":"graphics/srfp/weapons/Schwan_Plasma/srfp_schwan_glow.png",
+	"turretSprite":"graphics/srfp/weapons/Schwan_Plasma/srfp_schwan_base.png",
+	"turretGunSprite":"graphics/srfp/weapons/Schwan_Plasma/srfp_schwan_barrel.png",
+	"turretGlowSprite":"graphics/srfp/weapons/Schwan_Plasma/srfp_schwan_glow.png",
+	"visualRecoil":8,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[22, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[33, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	#"animationType":"GLOW",
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":50.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":15.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":17.0,
+					   "particleDuration":0.12,
+					   "particleCount":7,
+					   "particleColor":[255,133,145,255]},
+					   
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"srfp_schwan_shot",  # projectile that will be fired
+	"fireSoundTwo":"ion_pulser_fire",
+	"glowColor":[255,0,50,255],
+	#"autocharge":true,
+	#"interruptibleBurst":true
+}

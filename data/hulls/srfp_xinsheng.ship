@@ -1,0 +1,169 @@
+{
+  "hullName": "srfp_Xinsheng",
+  "hullId": "srfp_xinsheng",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/srfp/ships/srfp_xinsheng.png",
+  "style": "HIGH_TECH",
+  "height": 107,
+  "width": 100,
+  "center": [50, 55],
+  "collisionRadius": 62.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 69.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0003": "srfp_schwan",
+    "WS0005": "blinker_red",
+    "WS0006": "blinker_red",
+    "WS0007": "blinker_green",
+    "WS0008": "srfp_blinker_blue",
+    "WS0009": "srfp_radar",
+    "WS0010": "blinker_red",
+    "WS0011": "blinker_red"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, 31]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [6.5, -31]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0.5, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [0.5, 0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [50.5, -8.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [50.5, 8.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [25.5, -13.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [25.5, 13.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-26, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-3.5, -39]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-3.5, 39]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-52, -0.5],
+      "length": 49,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-46, 15],
+      "length": 28.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-46, -15],
+      "length": 28.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -45.5, -19.5,
+    -35.5, -23.5,
+    -10, -14.5,
+    -24, -39,
+    -3.5, -39,
+    19.5, -13.5,
+    36, -11.5,
+    49.5, -5,
+    49.5, 5,
+    36, 11.5,
+    19.5, 13.5,
+    -3.5, 39,
+    -24, 39,
+    -10, 14.5,
+    -35.5, 23.5,
+    -45.5, 19.5
+  ]
+}

@@ -34,20 +34,20 @@
 			"base_bp":0.25,				# Don't use these very often
 			"lowtech_bp":0.25,			# Don't use these very often
 			"midline_bp":0.25,			# Don't use these very often
+			"srfp_bp":100,
 		},
 		"hulls":{
-			"srfp_tachanka":1.25,		# Replace a few Dingjuns
 		},
 	},
 
 	# Ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfpB_bp"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp"],
 		#"hulls":[],
 	},
 
 	"knownShips":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp","srfpB_bp"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp"],
 		"hulls":[
 			"srfp_tachanka",
 		],
@@ -60,19 +60,19 @@
 	#},
 
 	#"knownFighters":{
-	#	"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp", "srfpB_bp"],
+	#	"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp"],
 	#	"fighters":[
 	#		"hoplon_wing",
 	#	],
 	#},
 
 	#"priorityFighters":{
-	#	"tags":["srfp_bp", "srfpB_bp"],
+	#	"tags":["srfp_bp"],
 	#	#"fighters":[],
 	#},
 
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "srfp_bp","srfpB_bp"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "srfp_bp"],
 		"weapons":[],
 	},
 

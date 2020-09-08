@@ -1,0 +1,33 @@
+{
+  "variantId": "srfp_xinsheng_elite",
+  "hullId": "srfp_xinsheng",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "srfp_schwan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "harpoon",
+        "WS0002": "harpoon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

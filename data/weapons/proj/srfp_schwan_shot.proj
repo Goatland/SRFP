@@ -1,0 +1,16 @@
+{
+	"id":"srfp_schwan_shot",
+	"specClass":"projectile",
+	"onHitEffect":"com.fs.starfarer.api.impl.combat.IonCannonOnHitEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":100.0,
+	"width":40.0,
+	"fadeTime":0.25,
+	"fringeColor":[255,0,50,255],
+	"coreColor":[225,133,145,230],
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

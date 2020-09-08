@@ -219,6 +219,14 @@ public class srfp_Dragon444 {
                 0.25f,
                 true,
                 false);
+
+        // Dragon444 SRFP Relay
+        SectorEntityToken epsilon_relay = system.addCustomEntity("dragon_relay", // unique id
+                null, // name - if null, defaultName from custom_entities.json will be used
+                "comm_relay", // type of object, defined in custom_entities.json
+                "srfp"); // faction
+        epsilon_relay.setCircularOrbitPointingDown(system.getEntityById("Dragon444"), 90, 3200, 245f);
+
         system.autogenerateHyperspaceJumpPoints(true, true);
 
         cleanup(system);
