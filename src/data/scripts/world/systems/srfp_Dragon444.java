@@ -48,7 +48,7 @@ public class srfp_Dragon444 {
         Shultzeburg.getSpec().setGlowColor(new Color(255, 255, 255, 255));
         Shultzeburg.getSpec().setUseReverseLightForGlow(true);
         Shultzeburg.applySpecChanges();
-        Shultzeburg.setCustomDescriptionId("planet_Shultzeburg");
+        Shultzeburg.setCustomDescriptionId("srfp_planet_Shultzeburg");
 
         MarketAPI ShultzeburgMarket = addMarketplace("srfp", Shultzeburg, null
                 , Shultzeburg.getName(), 6,
@@ -137,14 +137,14 @@ public class srfp_Dragon444 {
         morrison_field2.setCircularOrbit(morrison, 0, 0, 100);
 
         // Morrison gets 1 orbiting derelict station, one lost station, and ideally plenty of debris
-        SectorEntityToken dragonStation1 = system.addCustomEntity("dragon_abandoned_station1",
+        SectorEntityToken dragonStation1 = system.addCustomEntity("srfp_dragon_abandoned_station1",
                 "废弃的生态空间站", "station_side06", "neutral");
 
-        dragonStation1.setCircularOrbitPointingDown( system.getEntityById("srfp_planet_morrison"), 45, 350, 50);
+        dragonStation1.setCircularOrbitPointingDown( system.getEntityById("srfp_planet_morrison"), 45, 500, 50);
 
         Misc.setAbandonedStationMarket("dragon_abandoned_station1_market", dragonStation1);
 
-        dragonStation1.setCustomDescriptionId("dragon_station1");
+        dragonStation1.setCustomDescriptionId("srfp_dragon_station1");
         dragonStation1.setInteractionImage("illustrations", "abandoned_station3");
 
 
@@ -161,7 +161,7 @@ public class srfp_Dragon444 {
         debrisNextToBelt.setCircularOrbit(dr_star, 210f, 1000f, 320f);
         debrisNextToBelt.setId("dr_debris");
 
-        SectorEntityToken dragonleagStation = system.addCustomEntity("dragon_leag", "Dragon444 贸易站", "station_side02", "srfpB");
+        SectorEntityToken dragonleagStation = system.addCustomEntity("dragon_leag", "Dragon444贸易站", "station_side02", "srfpB");
         dragonleagStation.setCircularOrbitWithSpin(dr_star, 135, 4000f, 300f, 3f, 5f);
 
         MarketAPI dragonleagMarket = addMarketplace("srfpB", dragonleagStation, null
