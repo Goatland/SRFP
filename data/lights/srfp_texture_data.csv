@@ -1,0 +1,14 @@
+id,type,frame,magnitude,map,path
+srfp_Xinsheng,ship,,,material,graphics/srfp/shaders/material/ships/srfp_Xinsheng_material.png
+srfp_Xinsheng,ship,,,normal,graphics/srfp/shaders/normal/ships/srfp_Xinsheng_normal.png
+srfp_Xinsheng,ship,,,surface,graphics/srfp/shaders/surface/ships/srfp_Xinsheng_surface.png
+,,,,,
+srfp_tachanka,ship,,,material,graphics/srfp/shaders/material/ships/srfp_tachanka_material.png
+srfp_labrador,ship,,,material,graphics/srfp/shaders/material/ships/srfp_labrador_material.png
+,,,,,
+srfp_schwan,hardpointbarrel,,,material,graphics/srfp/shaders/material/weapons/srfp_schwan_barrel_material.png
+srfp_schwan,hardpointbarrel,,,normal,graphics/srfp/shaders/normal/weapons/srfp_schwan_barrel_normal.png
+srfp_schwan,hardpointbarrel,,,surface,graphics/srfp/shaders/surface/weapons/srfp_schwan_barrel_surface.png
+srfp_schwan,hardpoint,,,material,graphics/srfp/shaders/material/weapons/srfp_schwan_base_material.png
+srfp_schwan,hardpoint,,,normal,graphics/srfp/shaders/normal/weapons/srfp_schwan_base_normal.png
+srfp_schwan,hardpoint,,,surface,graphics/srfp/shaders/surface/weapons/srfp_schwan_base_surface.png

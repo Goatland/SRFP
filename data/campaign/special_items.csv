@@ -1,3 +1,4 @@
 name,id,tags,rarity,base price,stack size,cargo space,icon,sound id,sound id drop,plugin,plugin params,desc,order
 黑军蓝图包,srfpB_package,package_bp,,20000,1000,1,,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,srfpB_bp,使重工业设施能够制造英仙座社会革命阵线{黑军}设计中的常规武器以及战机{LPC。,10000
 人民船舶局蓝图包,srfp_package,package_bp,,25000,1000,1,graphics/srfp/icons/cargo/bp_srfp.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,srfp_bp,使重工业设施能够制造英仙座社会革命阵线{人民船舶局}设计中的常规武器以及战机{LPC。,10001
+近卫军蓝图包,srfpG_package,package_bp,,45000,1000,1,graphics/srfp/icons/cargo/bp_srfp.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,srfpG_bp,使重工业设施能够制造英仙座社会革命阵线{人民船舶局}设计中的常规武器以及战机{LPC。,10002

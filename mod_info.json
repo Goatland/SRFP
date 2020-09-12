@@ -3,7 +3,7 @@
 	"name":"星际革命:红与黑",
 	"author":"Yuli Hua, Leonie, Bukharin",
 	"version":"0.1prerelease",
-	"description":"需要LazyLib、MagicLib和GraphicsLib，支援势力争霸 \n*Requires LazyLib, MagicLib and GraphicsLib, Nexerelin compatible \nWorkers of Perseus, Unite!",
+	"description":"需要LazyLib、MagicLib和GraphicsLib，支援势力争霸\n 英仙座的工人们,联合起来! \n*Requires LazyLib, MagicLib and GraphicsLib, Nexerelin compatible \nWorkers of Perseus, Unite!",
 	"gameVersion":"0.9.1a",
 	"jars":["jars/srfpdemo.jar"],
 	"modPlugin":"data.scripts.srfpModPlugin"
