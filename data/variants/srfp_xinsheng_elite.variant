@@ -8,8 +8,9 @@
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "missleracks",
-    "fluxdistributor"
+    "magazines",
+    "fluxcoil",
+    "missleracks"
   ],
   "weaponGroups": [
     {

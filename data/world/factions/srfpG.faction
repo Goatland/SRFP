@@ -1,19 +1,15 @@
 {
-	id:"srfp",
-	"color":[239,65,53,255],
+	id:"srfpG",
+	"color":[239,120,53,255],
 
-	"baseUIColor":[239,65,53,255],
-	"darkUIColor":[85,0,0,175],
-	"gridUIColor":[255,255,255,75],
-	"brightUIColor":[231,98,103,255],
-
-	"displayName":"社会革命阵线",
-	"displayNameWithArticle":"社会革命阵线",
-	"displayNameLong":"英仙座社会革命阵线",
-	"displayNameLongWithArticle":"英仙座社会革命阵线",
+	"displayName":"革命近卫军",
+	"displayNameWithArticle":"革命近卫军",
+	"displayNameLong":"英仙座社会革命阵线近卫军",
+	"displayNameLongWithArticle":"英仙座社会革命阵线近卫军",
+	"showInIntelTab":false,
 	"displayNameIsOrAre":"",
-	"logo":"graphics/srfp/factions/srfp.png",
-	"crest":"graphics/srfp/factions/crest_srfp.png",
+	"logo":"graphics/srfp/factions/srfpG.png",
+	"crest":"graphics/srfp/factions/crest_srfpG.png",
 	"shipNamePrefix":"SRFS",
 	"shipNameSources":{
 		"SRFP":1,
@@ -30,101 +26,61 @@
 	# Multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
+			"base_bp":0.25,				# Don't use these very often
+			"lowtech_bp":0.25,			# Don't use these very often
+			"midline_bp":0.25,			# Don't use these very often
+			"srfp_bp":10,
 		},
 		"hulls":{
-			"buffalo2":0, # just say no
-			"apogee":0, # too civilian.
+            "buffalo2":0,
+            "apogee":0,
 		},
 	},
-	# ships the faction gets access to when importing S&W out-of-faction
+
+	# Ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp"],
-		"hulls":[
-		],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp"],
+		#"hulls":[],
 	},
+
 	"knownShips":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "sindrian_diktat", "lions_guard"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp","srfpB_bp"],
 		"hulls":[
-			"doom",
-			"harbinger",
-			"afflictor",
-			"shade",
-			"atlas",
-			"kite_original",
-			"monitor",
-			"odyssey",
-			"prometheus",
-			"conquest",
-			"gryphon",
-			"eagle",
-			"valkyrie",
 		],
 	},
-	# listing ships here will make the faction mostly use them even if other hulls become available
-	"priorityShips":{
-		"tags":[],
-		"hulls":[
-			"drover",
-			#"heron",
-			#"odyssey",
-			#"dominator",
-			"conquest",
-		],
-	},
-	"knownFighters":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "sindrian_diktat", "lions_guard"],
-		"fighters":[
-			"xyphos_wing",
-			"thunder_wing",
-			"claw_wing",
-			"longbow_wing",
-		],
-	},
-	"priorityFighters":{
-		"tags":[],
-		"fighters":[
-		],
-	},
+
+	# Listing ships here will make the faction mostly use them even if other hulls become available
+	#"priorityShips":{
+	#	"tags":[""],
+	#	"hulls":["", "", ""],
+	#},
+
+	#"knownFighters":{
+	#	"tags":["base_bp", "lowtech_bp", "midline_bp", "srfp_bp"],
+	#	"fighters":[
+	#		"hoplon_wing",
+	#	],
+	#},
+
+	#"priorityFighters":{
+	#	"tags":["srfp_bp"],
+	#	#"fighters":[],
+	#},
+
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "sindrian_diktat", "lions_guard"],
-		"weapons":[
-			"lightneedler",
-			"railgun",
-			"dualflak",
-			"heavymauler",
-			"hveldriver",
-			"heavyneedler",
-			"gauss",
-			"mjolnir",
-			"multineedler",
-			"sabotpod",
-			"phasecl",
-			"cyclone",
-			"hurricane",
-			"squall",
-			"locust",
-			"pdburst",
-			"amblaster",
-			"phasebeam",
-			"heavyblaster",
-			"heavyburst",
-			"ionpulser",
-			"ionbeam",
-			"plasma",
-			"guardian",
-			"tachyonlance",
-		],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "srfp_bp"],
+		"weapons":[],
 	},
+
 	"priorityWeapons":{
-		"tags":[],
-		"weapons":[
-		],
+		"tags":["srfp_bp"],
+		"weapons":[],
 	},
+
 	"knownHullMods":{
-		"tags":["base_bp", "sindrian_diktat", "lions_guard"],
+		"tags":["base_bp"],
 		"hullMods":[
-			"advancedshieldemitter", # accelerated
-			"advancedoptics",
+			"advancedshieldemitter",
 			"turretgyros",
 			"armoredweapons",
 			"augmentedengines",
@@ -137,26 +93,24 @@
 			"missleracks",
 			"extendedshieldemitter",
 			"frontemitter",
-			"frontshield",  # makeshift
-			"hardenedshieldemitter",
+			"frontshield",
 			"heavyarmor",
 			"insulatedengine",
-			"pointdefenseai",
 			"targetingunit",
 			"nav_relay",
-			"adaptiveshields", # omni
 			"operations_center",
-			"recovery_shuttles",
 			"fluxbreakers",
-			"solar_shielding",
 			"stabilizedshieldemitter",
 			"surveying_equipment",
+			"efficiency_overhaul",
+			"hiressensors",
 		],
 	},
+
 	"factionDoctrine":{
 		"warships":5,
-		"carriers":1,
-		"phaseShips":1,
+		"carriers":3,
+		"phaseShips":0,
 
 		"officerQuality":5,
 		"shipQuality":5,
@@ -166,9 +120,9 @@
 
 		"aggression":3,
 
-		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
-		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
-		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"combatFreighterProbability":0.1,					# Instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,				# As part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,	# As part of normal combat lineup, when marked as priority ship
 		"autofitRandomizeProbability":0.1,
 
 		"commanderSkillsShuffleProbability":0,
@@ -272,18 +226,8 @@
 	},
 
 	"fleetTypeNames":{
-		"mercScout":"内务部侦查舰队",
-		"mercBountyHunter":"内务部打击舰队",
-		"mercPrivateer":"人民志愿舰队",
-		"mercPatrol":"人民海军特种舰队",
-		"mercArmada":"人民海军主力舰队",
-		"trade":"人民互助商队",
-		"smallTrader":"发展改革考察队",
-		"tradeSmuggler":"特别运输舰队",
-		"taskForce":"快速反应舰队",
-		"tradeLiner":"人民客运局舰队",
-		"patrolSmall":"小型边防舰队",
-		"patrolMedium":"中型边防舰队",
-		"patrolLarge":"大型边防舰队",
+		"patrolSmall":"近卫小型侦查舰队",
+		"patrolMedium":"近卫军中型守备舰队",
+		"patrolLarge":"近卫军大型混成舰队",
 	},
 },

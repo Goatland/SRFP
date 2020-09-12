@@ -100,7 +100,8 @@ public class srfp_Omega810 {
                                 Industries.WAYSTATION,
                                 Industries.MINING,
                                 Industries.HEAVYBATTERIES,
-                                Industries.REFINING
+                                Industries.REFINING,
+                                "srfp_revolutionaryguard"
                         )),
                 0.35f,
                 false,
