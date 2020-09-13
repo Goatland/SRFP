@@ -4,7 +4,14 @@ srfp_Xinsheng,ship,,,normal,graphics/srfp/shaders/normal/ships/srfp_Xinsheng_nor
 srfp_Xinsheng,ship,,,surface,graphics/srfp/shaders/surface/ships/srfp_Xinsheng_surface.png
 ,,,,,
 srfp_tachanka,ship,,,material,graphics/srfp/shaders/material/ships/srfp_tachanka_material.png
+srfp_tachanka,ship,,,normal,graphics/srfp/shaders/normal/ships/srfp_tachanka_normal.png
+srfp_tachanka,ship,,,surface,graphics/srfp/shaders/surface/ships/srfp_tachanka_surface.png
 srfp_labrador,ship,,,material,graphics/srfp/shaders/material/ships/srfp_labrador_material.png
+srfp_labrador,ship,,,normal,graphics/srfp/shaders/normal/ships/srfp_labrador_normal.png
+srfp_labrador,ship,,,surface,graphics/srfp/shaders/surface/ships/srfp_labrador_surface.png
+srfp_kobayashimaru,ship,,,material,graphics/srfp/shaders/material/ships/srfp_kobayashimaru_material.png
+srfp_kobayashimaru,ship,,,normal,graphics/srfp/shaders/normal/ships/srfp_kobayashimaru_normal.png
+srfp_kobayashimaru,ship,,,surface,graphics/srfp/shaders/surface/ships/srfp_kobayashimaru_surface.png
 ,,,,,
 srfp_schwan,hardpointbarrel,,,material,graphics/srfp/shaders/material/weapons/srfp_schwan_barrel_material.png
 srfp_schwan,hardpointbarrel,,,normal,graphics/srfp/shaders/normal/weapons/srfp_schwan_barrel_normal.png
@@ -12,3 +19,4 @@ srfp_schwan,hardpointbarrel,,,surface,graphics/srfp/shaders/surface/weapons/srfp
 srfp_schwan,hardpoint,,,material,graphics/srfp/shaders/material/weapons/srfp_schwan_base_material.png
 srfp_schwan,hardpoint,,,normal,graphics/srfp/shaders/normal/weapons/srfp_schwan_base_normal.png
 srfp_schwan,hardpoint,,,surface,graphics/srfp/shaders/surface/weapons/srfp_schwan_base_surface.png
+,,,,,
