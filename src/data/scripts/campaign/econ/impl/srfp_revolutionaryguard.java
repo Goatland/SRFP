@@ -12,8 +12,10 @@ import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.impl.campaign.econ.impl.BaseIndustry;
 import com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase;
 import com.fs.starfarer.api.impl.campaign.fleets.*;
-import com.fs.starfarer.api.impl.campaign.ids.*;
-import com.fs.starfarer.api.ui.TooltipMakerAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Commodities;
+import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
+import com.fs.starfarer.api.impl.campaign.ids.Ranks;
+import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.util.IntervalUtil;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.Pair;
@@ -50,7 +52,6 @@ public class srfp_revolutionaryguard extends BaseIndustry implements RouteManage
         Pair<String, Integer> deficit = getMaxDeficit(Commodities.HAND_WEAPONS);
         applyDeficitToProduction(1, deficit, Commodities.MARINES);
 
-        modifyStabilityWithBaseMod();
 
         MemoryAPI memory = market.getMemoryWithoutUpdate();
         Misc.setFlagWithReason(memory, MemFlags.MARKET_PATROL, getModId(), true, -1);
@@ -71,24 +72,13 @@ public class srfp_revolutionaryguard extends BaseIndustry implements RouteManage
         Misc.setFlagWithReason(memory, MemFlags.MARKET_PATROL, getModId(), false, -1);
         Misc.setFlagWithReason(memory, MemFlags.MARKET_MILITARY, getModId(), false, -1);
 
-        unmodifyStabilityWithBaseMod();
     }
 
     protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
         return mode != IndustryTooltipMode.NORMAL || isFunctional();
     }
 
-    @Override
-    protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
-        if (mode != IndustryTooltipMode.NORMAL || isFunctional()) {
-            addStabilityPostDemandSection(tooltip, hasDemand, mode);
-        }
-    }
 
-    @Override
-    protected int getBaseStabilityMod() {
-        return 2;
-    }
 
     public String getNameForModifier() {
         if (getSpec().getName().contains("HQ")) {
@@ -97,10 +87,6 @@ public class srfp_revolutionaryguard extends BaseIndustry implements RouteManage
         return Misc.ucFirst(getSpec().getName());
     }
 
-    @Override
-    protected Pair<String, Integer> getStabilityAffectingDeficit() {
-        return getMaxDeficit(Commodities.SUPPLIES, Commodities.FUEL, Commodities.SHIPS, Commodities.HAND_WEAPONS);
-    }
 
     @Override
     public String getCurrentImage() {

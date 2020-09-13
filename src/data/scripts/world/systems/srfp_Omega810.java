@@ -71,7 +71,7 @@ public class srfp_Omega810 {
 
         //a new market for planet
         MarketAPI NeoamsterMarket = addMarketplace("srfp", Neoamster, null
-                , Neoamster.getName(), 7,
+                , Neoamster.getName(), 8,
                 new ArrayList<>(
                         Arrays.asList(
                                 Conditions.POPULATION_8, // population
@@ -97,11 +97,11 @@ public class srfp_Omega810 {
                                 Industries.FARMING,
                                 Industries.HIGHCOMMAND,
                                 Industries.ORBITALWORKS,
-                                Industries.WAYSTATION,
                                 Industries.MINING,
                                 Industries.HEAVYBATTERIES,
                                 Industries.REFINING,
-                                "srfp_revolutionaryguard"
+                                "srfp_revolutionaryguard",
+                                "srfp_miahq"
                         )),
                 0.35f,
                 false,

@@ -156,7 +156,7 @@ public class srfp_Epsilon201 {
                 true,
                 true);
 
-        MahknovMarket.getIndustry(Industries.FUELPROD).setSpecialItem(new SpecialItemData(Items.CORRUPTED_NANOFORGE,null));
+        MahknovMarket.getIndustry(Industries.FUELPROD).setSpecialItem(new SpecialItemData(Items.SYNCHROTRON,null));
 
         makhnovindStation.setCustomDescriptionId("station_makhnovind");
 
