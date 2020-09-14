@@ -41,7 +41,7 @@ FireAll PopulateOptions","""你的身份已被确认,请保持距离,任何军�
 
 这位人民海军$personRank 敷衍的说了句 ""革命万岁"" 便关闭了通讯.
 OR
-这位人民海军$personRank 很不耐烦.""没什么事的话我先挂了.""
+这位人民海军$personRank 很不耐烦.""没什么事的话我们要走了.""
 OR
 ""已建立通讯链接.如果你有关于反动派的情报,提交给当地内务部,有机会获得奖励.""",,
 ,,,,,,
@@ -65,7 +65,7 @@ $entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"�
 OR
 $personName 轻佻地说: ""你来追我呀,追到我我就和你嘿嘿嘿!""
 OR
-""生活在英仙座,简直就是一种耻辱,我操你大爷!!!""",cutCommLink:切断通讯,
+""你生活在英仙座,简直就是一种耻辱,我操你大爷!!!""",cutCommLink:切断通讯,
 greetingPirateHostileStronger,OpenCommLink,"$faction.id == srfpB
 $entity.isHostile
 $entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""我$personName ,是无政府主义者,我要给所有企图阻止工人获得自由的坏蛋套上绞索!""
@@ -136,9 +136,9 @@ $faction.id == srfpB",,"毫无疑问,你就是工人追求自由道路上的绊�
 CMSNTextRejectHostile_srfp,CMSNTextRejectHostile,$faction.id == srfp,,"""你逗我呢? 你在{内务部}的{名单}里,你现在跑过来找我是想死吗? 事实上我现在有权直接致电内务部来逮捕你.""",,
 CMSNTextHasOther_srfp,CMSNTextHasOther,$faction.id == srfp,,"""经查证你已经与 $theOtherCommissionFaction 签订了雇佣协议,这对{内务委员}来说可是个有趣的信息,如果你不与你现在的雇主解约,那么{内务部}将可以以间谍罪把你逮捕.""",,
 CMSNTextUnsuited_srfp,CMSNTextUnsuited,$faction.id == srfp,,"""抱歉,你的资料和政治背景显示你并不适合协助{社会革命阵线}建设共产主义.""",,
-CMSNTextSuitedPart1_srfp,CMSNTextSuitedPart1,$faction.id == srfp,,"接受{社会革命阵线}合作协议是个非常严肃的决定,你不仅要铲除所有反革命分子,也必须在官方机构无法触及的区域内替{人民海军}和{内务部}处理复杂事务.最重要的是,你将致力于建设属于 英仙座人类 的社会主义.
+CMSNTextSuitedPart1_srfp,CMSNTextSuitedPart1,$faction.id == srfp,,"接受{社会革命阵线}合作协议是个非常严肃的决定,你不仅要铲除所有反革命分子,也必须在官方机构无法触及的区域内替{人民海军}和{内务部}处理复杂事务.最重要的是,你将致力于建设属于 英仙座人类 的社会主义.同时我们可以派遣内务部情报人员协助你治理你的殖民地.
 
-我必须告知你,你有权随时辞去当前职务,但不能保证其他{人民海军}的忠诚指战员对你没有意见,也不能保证{内务部}不会将你列为高度可疑对象.",,
+我必须告知你,你有权随时辞去当前职务,但我们将会撤走所有在你的地盘上协助你的情报人员,同时也不能保证其他{人民海军}的忠诚指战员对你没有意见,{内务部}有可能将你列为高度可疑对象.",,
 CMSNTextSuitedPart2_srfp,CMSNTextSuitedPart2,$faction.id == srfp,,"""奉{社会革命阵线}之名,我将指派你作为{人民海军}的协助战力,你确认吗?""",,
 CMSNTextWelcomePart1_srfp,CMSNTextWelcomePart1,$faction.id == srfp,,"""太好了,欢迎加入,同志!""",,
 CMSNTextWelcomePart2_srfp,CMSNTextWelcomePart2,$faction.id == srfp,,"""那么,我还能为你做些什么?""",,
