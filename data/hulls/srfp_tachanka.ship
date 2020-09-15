@@ -2,7 +2,7 @@
   "hullName": "SRFP_tachanka",
   "hullId": "srfp_tachanka",
   "hullSize": "FRIGATE",
-  "spriteName": "graphics/srfp/ships/srfp_tachanka.png",
+  "spriteName": "graphics/srfp/ships/tachanka/srfp_tachanka.png",
   "style": "HIGH_TECH",
   "height": 94,
   "width": 62,

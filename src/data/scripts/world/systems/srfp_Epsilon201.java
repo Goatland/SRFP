@@ -57,14 +57,13 @@ public class srfp_Epsilon201 {
                         Arrays.asList(
                                 Industries.POPULATION,
                                 Industries.MEGAPORT,
-                                Industries.STARFORTRESS,
+                                Industries.GROUNDDEFENSES,
                                 Industries.FARMING,
-                                Industries.HIGHCOMMAND,
+                                Industries.MILITARYBASE,
                                 Industries.ORBITALWORKS,
-                                Industries.WAYSTATION,
                                 Industries.MINING,
                                 Industries.LIGHTINDUSTRY,
-                                Industries.HEAVYBATTERIES
+                                Industries.HEAVYINDUSTRY
                         )),
                 0.25f,
                 true,
@@ -110,8 +109,6 @@ public class srfp_Epsilon201 {
                         Arrays.asList(
                                 Industries.POPULATION,
                                 Industries.SPACEPORT,
-                                Industries.STARFORTRESS,
-                                Industries.PATROLHQ,
                                 Industries.ORBITALWORKS,
                                 Industries.WAYSTATION,
                                 Industries.MINING,

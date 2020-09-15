@@ -1,13 +1,13 @@
 {
-	"baseHullId":"buffalo",
-	"skinHullId":"buffalo_kanikosen",
-	"hullName":"水牛",
-	"descriptionId":"buffalo",  # optional
+	"baseHullId":"srfp_tachanka",
+	"skinHullId":"srfp_tachanka_srfp",
+	"hullName":"搭枪卡",
+	"descriptionId":"srfp_tachanka",  # optional
 	"descriptionPrefix":"这艘船除了涂装有社会革命阵线的标志以外，仅对部分系统进行了细微修改 ",
-	"tags":["srfp_bp"],
+	"tags":["rare_bp","srfp_bp"],
 	"tech":"人民船舶局",
-	"fleetPoints":5,
-	"spriteName":"graphics/srfp/ships/buffalo/buffalo_kanikosen.png",
+	"fleetPoints":7,
+	"spriteName":"graphics/srfp/ships/tachanka/srfp_tachanka_srfp.png",
 	"removeWeaponSlots":[], 		# ids
 	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
 	"removeBuiltInMods":[], 		# hullmod ids

@@ -1,13 +1,13 @@
 {
 	"baseHullId":"buffalo",
-	"skinHullId":"buffalo_kanikosen",
+	"skinHullId":"buffalo_srfpB",
 	"hullName":"水牛",
 	"descriptionId":"buffalo",  # optional
-	"descriptionPrefix":"这艘船除了涂装有社会革命阵线的标志以外，仅对部分系统进行了细微修改 ",
-	"tags":["srfp_bp"],
-	"tech":"人民船舶局",
+	"descriptionPrefix":"这艘船除了涂装有自由星区安那其主义联盟的标志以外，仅对部分系统进行了细微修改 ",
+	"tags":["srfpB_bp"],
+	"tech":"黑军",
 	"fleetPoints":5,
-	"spriteName":"graphics/srfp/ships/buffalo/buffalo_kanikosen.png",
+	"spriteName":"graphics/srfp/ships/buffalo/buffalo_srfpB.png",
 	"removeWeaponSlots":[], 		# ids
 	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
 	"removeBuiltInMods":[], 		# hullmod ids

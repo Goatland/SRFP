@@ -4,21 +4,26 @@
 	"combatSmallForSmallFleet":{
 		"srfp_labrador_assault":10,
 		"srfp_tachanka_partisan":10,
+		"srfp_xinsheng_elite":10,
 	},
 	"combatSmall":{
 		"srfp_labrador_assault":10,
 		"srfp_tachanka_partisan":10,
+		"srfp_xinsheng_elite":10,
 	},
 	"combatMedium":{
 		"srfp_kobayashimaru_standard":10,
 		"srfp_labrador_assault":10,
 		"srfp_tachanka_partisan":10,
+		"srfp_xinsheng_elite":10,
 	},
 	"combatLarge":{
 		"srfp_tachanka_partisan":10,
+		"srfp_xinsheng_elite":10
 	},
 	"combatCapital":{
 		"srfp_tachanka_partisan":10,
+		"srfp_xinsheng_elite":10
 	},
 	
 	

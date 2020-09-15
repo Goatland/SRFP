@@ -158,7 +158,7 @@ public class srfp_Omega810 {
                                 Industries.SPACEPORT,
                                 Industries.STARFORTRESS,
                                 Industries.MINING,
-                                Industries.HEAVYINDUSTRY,
+                                Industries.GROUNDDEFENSES,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.REFINING,
                                 Industries.TECHMINING,
@@ -169,8 +169,7 @@ public class srfp_Omega810 {
                 true,
                 true);
         Jonesburg.setCustomDescriptionId("srfp_planet_Jonesburg");
-        JonesburgMarket.getIndustry(Industries.HEAVYINDUSTRY).setAICoreId(Commodities.GAMMA_CORE);
-        ((HeavyIndustry) JonesburgMarket.getIndustry(Industries.HEAVYINDUSTRY)).setNanoforge(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
+        JonesburgMarket.getIndustry(Industries.REFINING).setAICoreId(Commodities.GAMMA_CORE);
 
         //set Jumppoint
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("omega_jump", "Omega810 Bridge");

@@ -51,7 +51,7 @@ public class srfp_Dragon444 {
         Shultzeburg.setCustomDescriptionId("srfp_planet_Shultzeburg");
 
         MarketAPI ShultzeburgMarket = addMarketplace("srfp", Shultzeburg, null
-                , Shultzeburg.getName(), 6,
+                , Shultzeburg.getName(), 7,
                 new ArrayList<>(
                         Arrays.asList(
                                 Conditions.POPULATION_7, // population
@@ -74,9 +74,10 @@ public class srfp_Dragon444 {
                                 Industries.ORBITALSTATION,
                                 Industries.FARMING,
                                 Industries.PATROLHQ,
-                                Industries.WAYSTATION,
                                 Industries.MINING,
-                                Industries.LIGHTINDUSTRY
+                                Industries.GROUNDDEFENSES,
+                                Industries.LIGHTINDUSTRY,
+                                "srfp_miasite"
                         )),
                 0.35f,
                 false,
@@ -165,10 +166,10 @@ public class srfp_Dragon444 {
         dragonleagStation.setCircularOrbitWithSpin(dr_star, 135, 4000f, 300f, 3f, 5f);
 
         MarketAPI dragonleagMarket = addMarketplace("srfpB", dragonleagStation, null
-                , dragonleagStation.getName(), 5,
+                , dragonleagStation.getName(), 4,
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.POPULATION_5, // population
+                                Conditions.POPULATION_4, // population
                                 Conditions.FRONTIER
                         )),
                 new ArrayList<>(
@@ -181,7 +182,8 @@ public class srfp_Dragon444 {
                         Arrays.asList(
                                 Industries.POPULATION,
                                 Industries.SPACEPORT,
-                                Industries.MINING
+                                Industries.MINING,
+                                Industries.WAYSTATION
                         )),
                 0.3f,
                 true,
